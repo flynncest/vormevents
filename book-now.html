@@ -82,67 +82,63 @@
     <form class="book-form" name="book-now" action="#" onsubmit="handleSubmit(event)">
 
       <!-- Company -->
-      <div class="form-row">
-        <div class="form-field">
-          <label for="company">Company Name *</label>
-          <input type="text" id="company" name="company" placeholder="Acme Corp" required />
-        </div>
-        <div class="form-field">
-          <label for="name">Your Name *</label>
-          <input type="text" id="name" name="name" placeholder="Jan de Vries" required />
-        </div>
+      <div class="form-field">
+        <label for="company">Company Name *</label>
+        <input type="text" id="company" name="company" placeholder="Acme Corp" required />
+      </div>
+
+      <div class="form-field">
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" placeholder="Jan de Vries" required />
       </div>
 
       <!-- Contact -->
-      <div class="form-row">
-        <div class="form-field">
-          <label for="email">Email Address *</label>
-          <input type="email" id="email" name="email" placeholder="you@company.com" required />
-        </div>
-        <div class="form-field">
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" placeholder="+31 6 12345678" />
-        </div>
+      <div class="form-field">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="you@company.com" required />
+      </div>
+
+      <div class="form-field">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+31 6 12345678" />
       </div>
 
       <!-- Event details -->
-      <div class="form-row">
-        <div class="form-field">
-          <label for="event-date">Event Date *</label>
-          <input type="date" id="event-date" name="event-date" required />
-        </div>
-        <div class="form-field">
-          <label for="event-time">Event Start Time</label>
-          <input type="time" id="event-time" name="event-time" />
-        </div>
+      <div class="form-field">
+        <label for="event-date">Event Date *</label>
+        <input type="date" id="event-date" name="event-date" required />
       </div>
 
-      <div class="form-row">
-        <div class="form-field">
-          <label for="duration">Duration Needed</label>
-          <select id="duration" name="duration">
-            <option value="">Select hours</option>
-            <option value="4">4 hours — €1,600</option>
-            <option value="5">5 hours — €1,800</option>
-            <option value="6">6 hours — €2,000</option>
-            <option value="7">7 hours — €2,200</option>
-            <option value="8">8 hours — €2,400 (most popular)</option>
-            <option value="9">9 hours — €2,600</option>
-            <option value="10">10 hours — €2,800</option>
-            <option value="custom">Custom / multi-day</option>
-          </select>
-        </div>
-        <div class="form-field">
-          <label for="guests">Expected Attendees</label>
-          <select id="guests" name="guests">
-            <option value="">Select range</option>
-            <option value="under-100">Under 100</option>
-            <option value="100-250">100–250</option>
-            <option value="250-500">250–500</option>
-            <option value="500-1000">500–1,000</option>
-            <option value="1000+">1,000+</option>
-          </select>
-        </div>
+      <div class="form-field">
+        <label for="event-time">Event Start Time</label>
+        <input type="time" id="event-time" name="event-time" />
+      </div>
+
+      <div class="form-field">
+        <label for="duration">Duration Needed</label>
+        <select id="duration" name="duration">
+          <option value="">Select hours</option>
+          <option value="4">4 hours — €1,600</option>
+          <option value="5">5 hours — €1,800</option>
+          <option value="6">6 hours — €2,000</option>
+          <option value="7">7 hours — €2,200</option>
+          <option value="8">8 hours — €2,400 (most popular)</option>
+          <option value="9">9 hours — €2,600</option>
+          <option value="10">10 hours — €2,800</option>
+          <option value="custom">Custom / multi-day</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="guests">Expected Attendees</label>
+        <select id="guests" name="guests">
+          <option value="">Select range</option>
+          <option value="under-100">Under 100</option>
+          <option value="100-250">100–250</option>
+          <option value="250-500">250–500</option>
+          <option value="500-1000">500–1,000</option>
+          <option value="1000+">1,000+</option>
+        </select>
       </div>
 
       <div class="form-field">

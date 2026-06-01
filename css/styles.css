@@ -38,8 +38,8 @@ button { font-family: inherit; }
 .nav {
   position: fixed;
   top: var(--nav-top);
-  left: var(--pad);
-  right: var(--pad);
+  left: clamp(0.75rem, 2vw, 1.5rem);
+  right: clamp(0.75rem, 2vw, 1.5rem);
   height: var(--nav-h);
   display: flex;
   align-items: center;
@@ -1694,8 +1694,9 @@ button { font-family: inherit; }
 @media (max-width: 680px) {
   .catalog-grid { grid-template-columns: repeat(2, 1fr); }
   .how-steps { grid-template-columns: 1fr; }
-  .how-step { min-height: unset; }                    /* hug content height */
-  .pricing-layout { grid-template-columns: 1fr; }     /* top-to-bottom */
+  .how-step { min-height: unset; }
+  .pricing-layout { grid-template-columns: 1fr; }
+  .book-form-wrap { grid-template-columns: 1fr; }     /* top-to-bottom */
   .live-stats { grid-template-columns: 1fr; gap: 1rem; }
   .finishing-options { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr 1fr; }     /* 2 columns */
