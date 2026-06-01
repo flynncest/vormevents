@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Now — VORM Events | Live Hot Foil Personalisation</title>
+  <meta name="description" content="Book VORM Events for your next trade show, conference or corporate event. Tell us about your event and we'll send a tailored proposal within 24 hours." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <ul class="nav-left">
+      <li><a class="nav-link" href="services.html">Event Services</a></li>
+      <li><a class="nav-link" href="catalog.html">Catalog</a></li>
+    </ul>
+    <a class="nav-logo" href="index.html">Vorm Events</a>
+    <ul class="nav-right">
+      <li><a class="nav-link" href="index.html#about">About</a></li>
+      <li><a class="nav-link" href="services.html#faq">FAQ</a></li>
+      <li><a class="nav-link nav-cta" href="book-now.html" style="opacity:0.45;">Book Now &rarr;</a></li>
+      <li><button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button></li>
+    </ul>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-menu" id="mob-menu">
+    <div class="mob-menu-head">
+      <button class="mob-close" id="mob-close">&times;</button>
+      <span class="mob-logo">Vorm Events</span>
+      <div class="mob-spacer"></div>
+    </div>
+    <nav class="mob-nav">
+      <a href="services.html">Event Services</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="index.html#about">About</a>
+      <a href="services.html#faq">FAQ</a>
+      <a href="services.html#pricing">Pricing</a>
+      <a href="book-now.html" class="mob-book">Book Now &rarr;</a>
+    </nav>
+  </div>
+
+
+  <!-- HERO -->
+  <div class="book-hero">
+    <p class="page-hero-eyebrow">Book an Event</p>
+    <h1 class="page-hero-title">Tell us about your event</h1>
+    <p class="page-hero-subtitle">Fill in the details below and we'll send a tailored proposal — including product recommendations, capacity planning, and a fixed quote — within 24 hours.</p>
+  </div>
+
+
+  <!-- FORM + SIDEBAR -->
+  <div class="book-form-wrap">
+
+    <!-- SIDEBAR -->
+    <div class="book-sidebar">
+      <h2 class="book-sidebar-title">What happens next</h2>
+      <p class="book-sidebar-text">After we receive your enquiry, a member of our team will review the details and reach out within 24 hours with a tailored proposal including service fee, product recommendations, and capacity planning for your event size.</p>
+      <p class="book-sidebar-text">We'll also walk you through the artwork requirements for your custom stamping die — all we need is a clean vector logo file.</p>
+
+      <div style="margin-top:2rem;">
+        <span class="book-contact-label">Email</span>
+        <p class="book-contact-item"><a href="mailto:hello@vormevents.com" style="color:var(--gold);">hello@vormevents.com</a></p>
+      </div>
+      <div style="margin-top:1rem;">
+        <span class="book-contact-label">Based in</span>
+        <p class="book-contact-item">The Netherlands &nbsp;&middot;&nbsp; Serving events across Europe</p>
+      </div>
+
+      <!-- Pricing reminder -->
+      <div style="background:#F9F9F9; border-radius:10px; padding:1.5rem; margin-top:2rem;">
+        <p style="font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:0.75rem;">Pricing reminder</p>
+        <p style="font-family:'Instrument Serif',serif; font-size:1.4rem; margin-bottom:0.25rem;">€1,600</p>
+        <p style="font-size:0.72rem; color:var(--muted); margin-bottom:0.5rem;">Starting from / 4 hours</p>
+        <p style="font-size:0.78rem; color:var(--text);">+ €200 per additional hour</p>
+        <p style="font-size:0.72rem; color:var(--muted); margin-top:0.75rem; font-style:italic;">Includes logistics within NL, machine rental, artisan team, all materials &amp; custom die.</p>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <form class="book-form" name="book-now" action="#" onsubmit="handleSubmit(event)">
+
+      <!-- Company -->
+      <div class="form-row">
+        <div class="form-field">
+          <label for="company">Company Name *</label>
+          <input type="text" id="company" name="company" placeholder="Acme Corp" required />
+        </div>
+        <div class="form-field">
+          <label for="name">Your Name *</label>
+          <input type="text" id="name" name="name" placeholder="Jan de Vries" required />
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="form-row">
+        <div class="form-field">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="you@company.com" required />
+        </div>
+        <div class="form-field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+31 6 12345678" />
+        </div>
+      </div>
+
+      <!-- Event details -->
+      <div class="form-row">
+        <div class="form-field">
+          <label for="event-date">Event Date *</label>
+          <input type="date" id="event-date" name="event-date" required />
+        </div>
+        <div class="form-field">
+          <label for="event-time">Event Start Time</label>
+          <input type="time" id="event-time" name="event-time" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="duration">Duration Needed</label>
+          <select id="duration" name="duration">
+            <option value="">Select hours</option>
+            <option value="4">4 hours — €1,600</option>
+            <option value="5">5 hours — €1,800</option>
+            <option value="6">6 hours — €2,000</option>
+            <option value="7">7 hours — €2,200</option>
+            <option value="8">8 hours — €2,400 (most popular)</option>
+            <option value="9">9 hours — €2,600</option>
+            <option value="10">10 hours — €2,800</option>
+            <option value="custom">Custom / multi-day</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="guests">Expected Attendees</label>
+          <select id="guests" name="guests">
+            <option value="">Select range</option>
+            <option value="under-100">Under 100</option>
+            <option value="100-250">100–250</option>
+            <option value="250-500">250–500</option>
+            <option value="500-1000">500–1,000</option>
+            <option value="1000+">1,000+</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="location">Event Location / Venue *</label>
+        <input type="text" id="location" name="location" placeholder="RAI Amsterdam, Hall 7" required />
+      </div>
+
+      <!-- Items interested in -->
+      <div class="form-field">
+        <label>Items Interested In</label>
+        <div class="check-group">
+          <label class="check-pill"><input type="checkbox" name="items" value="journal-a5" /><span class="check-pill-label">Journal A5</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="card-holder" /><span class="check-pill-label">Card Holder</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="keyring" /><span class="check-pill-label">Keyring</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="luggage-tag" /><span class="check-pill-label">Luggage Tag</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="mousepad" /><span class="check-pill-label">Mousepad</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="laptop-sleeve" /><span class="check-pill-label">Laptop Sleeve</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="tote-bag" /><span class="check-pill-label">Tote Bag</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="cork-items" /><span class="check-pill-label">Cork Items</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="own-products" /><span class="check-pill-label">I'll supply my own</span></label>
+        </div>
+      </div>
+
+      <!-- Technique -->
+      <div class="form-field">
+        <label>Stamping Technique</label>
+        <div class="check-group">
+          <label class="check-pill"><input type="checkbox" name="technique" value="gold-foil" /><span class="check-pill-label">Gold Foil</span></label>
+          <label class="check-pill"><input type="checkbox" name="technique" value="colour-foil" /><span class="check-pill-label">Colour Foil</span></label>
+          <label class="check-pill"><input type="checkbox" name="technique" value="blind-press" /><span class="check-pill-label">Blind Press</span></label>
+          <label class="check-pill"><input type="checkbox" name="technique" value="logo-only" /><span class="check-pill-label">Logo Only</span></label>
+          <label class="check-pill"><input type="checkbox" name="technique" value="logo-name" /><span class="check-pill-label">Logo + Name</span></label>
+          <label class="check-pill"><input type="checkbox" name="technique" value="not-sure" /><span class="check-pill-label">Not sure yet</span></label>
+        </div>
+      </div>
+
+      <!-- Quantity -->
+      <div class="form-field">
+        <label for="quantity">Estimated Product Quantity</label>
+        <select id="quantity" name="quantity">
+          <option value="">Select range</option>
+          <option value="under-100">Under 100 items</option>
+          <option value="100-200">100–200 items</option>
+          <option value="200-400">200–400 items</option>
+          <option value="400-600">400–600 items</option>
+          <option value="600+">600+ items</option>
+          <option value="unsure">Not sure — advise me</option>
+        </select>
+      </div>
+
+      <!-- Notes -->
+      <div class="form-field">
+        <label for="notes">Anything else we should know?</label>
+        <textarea id="notes" name="notes" placeholder="Tell us about the event format, stand size, brand guidelines, or any special requirements..."></textarea>
+      </div>
+
+      <!-- Submit -->
+      <div class="form-submit">
+        <button type="submit" class="btn-dark">Send Enquiry &rarr;</button>
+        <p class="form-note">We'll respond within 24 hours.</p>
+      </div>
+
+    </form>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <p style="font-family:'Instrument Serif',serif; font-size:1rem; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:1rem;">Vorm Events</p>
+        <p class="footer-brand-text">Specialist live hot foil embossing and personalisation for B2B events, trade shows, and conferences across Europe.</p>
+        <p class="footer-email-label">Stay in the loop</p>
+        <form class="footer-form" onsubmit="return false;">
+          <input type="email" placeholder="your@email.com" aria-label="Email" />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-col-links">
+          <li><a href="services.html">Event Services</a></li>
+          <li><a href="services.html#faq">FAQ</a></li>
+          <li><a href="services.html#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Company</p>
+        <ul class="footer-col-links">
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="catalog.html">Product Catalog</a></li>
+          <li><a href="book-now.html">Book an Event</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Follow</p>
+        <ul class="footer-col-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-wordmark-wrap">
+      <div class="footer-wordmark">VORM EVENTS</div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 VORM Events. All rights reserved.</p>
+      <ul class="footer-legal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('[type="submit"]');
+      btn.textContent = 'Sent ✓';
+      btn.style.background = '#2A7A4A';
+      btn.disabled = true;
+    }
+  </script>
+</body>
+</html>
