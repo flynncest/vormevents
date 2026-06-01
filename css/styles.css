@@ -112,8 +112,17 @@ button { font-family: inherit; }
   align-items: center;
   gap: 0.5em;
   transition: all 0.22s;
+  white-space: nowrap;
 }
 .nav-cta:hover { background: var(--text); color: #fff; }
+
+@media (max-width: 900px) {
+  .nav-cta {
+    padding: 0.38em 0.85em;
+    font-size: 0.6rem;
+    letter-spacing: 0.05em;
+  }
+}
 
 /* ============================
    DROPDOWN — full 100vw panel
@@ -183,8 +192,8 @@ button { font-family: inherit; }
    ============================ */
 .hero {
   position: relative;
-  height: 90vh;
-  min-height: 560px;
+  height: 85vh;
+  min-height: 520px;
   overflow: hidden;
 }
 
@@ -278,7 +287,7 @@ button { font-family: inherit; }
 
 .value-title {
   font-family: 'Instrument Serif', serif;
-  font-size: clamp(1.5rem, 3.3vw, 3rem);
+  font-size: clamp(1.75rem, 3.8vw, 3.4rem);
   font-weight: 400;
   line-height: 1.25;
   color: var(--text);
@@ -1670,10 +1679,11 @@ button { font-family: inherit; }
 }
 
 @media (max-width: 900px) {
-  .nav-left { display: none; }
+  .nav-left { display: flex; }
+  .nav-left .nav-link { display: none; }   /* hide text links, keep hamburger */
   .nav-hamburger { display: flex; }
   .nav-right .nav-link:not(.nav-cta) { display: none; }
-  .nav-cta { display: none; }
+  .nav-cta { display: flex; }              /* show Book Now on right */
   .service-cards { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
   .live-inner, .about-strip-inner, .pricing-inner, .capacity-inner, .personalisation-inner { grid-template-columns: 1fr; }
   .why-header { grid-template-columns: 1fr; }
@@ -1683,10 +1693,13 @@ button { font-family: inherit; }
 
 @media (max-width: 680px) {
   .catalog-grid { grid-template-columns: repeat(2, 1fr); }
-  .how-steps { grid-template-columns: repeat(2, 1fr); }
+  .how-steps { grid-template-columns: 1fr; }
+  .how-step { min-height: unset; }                    /* hug content height */
+  .pricing-layout { grid-template-columns: 1fr; }     /* top-to-bottom */
   .live-stats { grid-template-columns: 1fr; gap: 1rem; }
   .finishing-options { grid-template-columns: 1fr; }
-  .footer-top { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr 1fr; }     /* 2 columns */
+  .footer-top > div:first-child { grid-column: 1 / -1; } /* brand full width */
   .why-grid { grid-template-columns: 1fr; }
   .catalog-info-grid { grid-template-columns: 1fr; }
   .hero-links { flex-direction: column; gap: 1rem; }
