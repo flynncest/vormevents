@@ -1702,6 +1702,7 @@ button { font-family: inherit; }
 }
 
 @media (max-width: 680px) {
+  .hero { height: 81vh; }
   .catalog-grid { grid-template-columns: repeat(2, 1fr); }
   .how-steps { grid-template-columns: 1fr; }
   .how-step { min-height: unset; }
