@@ -1,4 +1,4 @@
-/* VORM EVENTS — Global Stylesheet v3 */
+/* MONOSPACE EVENTS — Global Stylesheet v3 */
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
 
 :root {
@@ -44,21 +44,33 @@ button { font-family: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.75rem;
+  padding: 0 2vw 0 0.5rem;
   z-index: 1000;
   background: rgba(255,255,255,0.97);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-radius: 10px;
   box-shadow: 0 2px 18px rgba(0,0,0,0.07);
-  transition: box-shadow 0.3s;
+  transition: background 0.35s ease, box-shadow 0.3s;
 }
 .nav:hover { box-shadow: 0 4px 24px rgba(0,0,0,0.1); }
+
+.nav.transparent {
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: none;
+}
+.nav.solid {
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
 
 .nav-left, .nav-right {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
   list-style: none;
   flex: 1;
 }
@@ -192,7 +204,7 @@ button { font-family: inherit; }
    ============================ */
 .hero {
   position: relative;
-  height: 85vh;
+  height: 95vh;
   min-height: 520px;
   overflow: hidden;
 }
@@ -200,7 +212,9 @@ button { font-family: inherit; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: #EBEBEB;
+  background-image: linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.58)), url('../assets/products/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-body {
@@ -220,7 +234,7 @@ button { font-family: inherit; }
   font-family: 'Instrument Serif', serif;
   font-size: clamp(2.6rem, 5.5vw, 5rem);
   font-weight: 400;
-  color: var(--text);
+  color: #fff;
   line-height: 1.08;
   margin-bottom: 1rem;
 }
@@ -229,7 +243,7 @@ button { font-family: inherit; }
   font-size: 0.62rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: rgba(255,255,255,0.72);
 }
 
 /* ============================
@@ -319,7 +333,7 @@ button { font-family: inherit; }
 }
 
 .service-img-wrap {
-  aspect-ratio: 4/3;
+  aspect-ratio: 4/3.45;
   overflow: hidden;
   background: var(--ph);
 }
@@ -404,11 +418,6 @@ button { font-family: inherit; }
 }
 .why-card:hover { background: #EAEAEA; }
 
-.why-card-ph {
-  width: 100%;
-  aspect-ratio: 4/3;
-  background: var(--ph);
-}
 
 .why-card-body {
   padding: 1.5rem 1.5rem 2rem;
@@ -462,7 +471,8 @@ button { font-family: inherit; }
   letter-spacing: 0.18em;
   color: var(--gold);
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: auto;
+  padding-bottom: 1rem;
 }
 
 .how-step-title {

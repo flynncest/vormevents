@@ -1,4 +1,4 @@
-/* VORM EVENTS — Main JS */
+/* MONOSPACE EVENTS — Main JS */
 
 // ── Dropdown — hover with delay so gap doesn't close it ──
 document.querySelectorAll('.nav-item').forEach(item => {
