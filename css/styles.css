@@ -1526,31 +1526,96 @@ button { font-family: inherit; }
 .product-card:hover .arrow-btn { background: var(--gold); color: #fff; }
 
 /* Catalog info strip */
-.catalog-info-strip {
+.catalog-promo-strip {
   padding: clamp(2.5rem, 5vh, 4rem) var(--pad);
   background: #F9F9F9;
 }
 
-.catalog-info-grid {
+.catalog-promo-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 1.25rem;
 }
 
-.catalog-info-card {
-  background: #fff;
-  border-radius: 10px;
-  padding: 1.75rem;
+.promo-card {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.catalog-info-title {
+.promo-card-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.promo-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.58);
+}
+
+.promo-card--dark {
+  background: var(--text);
+}
+
+.promo-card-body {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.promo-card-eyebrow {
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 0.6rem;
+}
+
+.promo-card-title {
   font-family: 'Instrument Serif', serif;
-  font-size: 1.1rem;
-  margin-bottom: 0.65rem;
-  color: var(--text);
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  line-height: 1.25;
+  color: #fff;
+  margin-bottom: 0.85rem;
 }
 
-.catalog-info-text { font-size: 0.8rem; color: var(--muted); line-height: 1.75; }
+.promo-card-text {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.72);
+  margin-bottom: 1.25rem;
+}
+
+.promo-card-note {
+  display: inline-block;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 4px;
+  color: rgba(255,255,255,0.75);
+}
+
+.promo-card-cta {
+  display: inline-block;
+  font-size: 0.82rem;
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+.promo-card-cta:hover { opacity: 0.75; }
 
 /* ============================
    BUTTONS
@@ -1702,6 +1767,7 @@ button { font-family: inherit; }
 }
 
 @media (max-width: 680px) {
+  .pricing-total-note { grid-template-columns: 1fr; }
   .hero { height: 81vh; }
   .catalog-grid { grid-template-columns: repeat(2, 1fr); }
   .how-steps { grid-template-columns: 1fr; }
@@ -1713,6 +1779,6 @@ button { font-family: inherit; }
   .footer-top { grid-template-columns: 1fr 1fr; }     /* 2 columns */
   .footer-top > div:first-child { grid-column: 1 / -1; } /* brand full width */
   .why-grid { grid-template-columns: 1fr; }
-  .catalog-info-grid { grid-template-columns: 1fr; }
+  .catalog-promo-grid { grid-template-columns: 1fr; }
   .hero-links { flex-direction: column; gap: 1rem; }
 }
