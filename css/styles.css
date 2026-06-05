@@ -1782,3 +1782,124 @@ button { font-family: inherit; }
   .catalog-promo-grid { grid-template-columns: 1fr; }
   .hero-links { flex-direction: column; gap: 1rem; }
 }
+
+/* ============================
+   CATALOG PERSONALISATION BANNER
+   ============================ */
+.catalog-personalisation-banner {
+  padding: 3rem var(--pad);
+  background: var(--card);
+}
+.catalog-personalisation-banner img {
+  width: 100%;
+  max-width: 1080px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ============================
+   SERVICE HUB — services page two-card intro
+   ============================ */
+.service-hub {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  padding: 3rem var(--pad) 2rem;
+}
+.service-hub-card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 2.5rem 2.25rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+.service-hub-card:hover { background: #E4E4E4; }
+.service-hub-num {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.service-hub-title {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.15;
+}
+.service-hub-desc {
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.75;
+  flex: 1;
+}
+.service-hub-cta {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+/* ============================
+   SERVICE DETAIL SECTIONS — services page
+   ============================ */
+.service-detail-section {
+  padding: 4rem var(--pad) 2rem;
+  border-top: 1px solid #E8E8E8;
+}
+.service-detail-head {
+  max-width: 660px;
+  margin-bottom: 3rem;
+}
+.service-detail-eyebrow {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+.service-detail-title {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+.service-detail-intro {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+/* ============================
+   CATALOG SERVICE SECTIONS
+   ============================ */
+.catalog-service-section {
+  border-top: 1px solid #E8E8E8;
+}
+.catalog-service-head {
+  padding: 3rem var(--pad) 0;
+}
+.catalog-service-title {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-weight: 400;
+  margin-top: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+.catalog-service-body {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 560px;
+}
+
+@media (max-width: 768px) {
+  .service-hub { grid-template-columns: 1fr; }
+  .service-detail-section { padding: 3rem var(--pad) 1rem; }
+}
