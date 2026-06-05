@@ -6,26 +6,30 @@
   <title>Book Now — Monospace Events | Live Hot Foil Personalisation</title>
   <meta name="description" content="Book Monospace Events for your next trade show, conference or corporate event. Tell us about your event and we'll send a tailored proposal within 24 hours." />
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/i18n.js"></script>
 </head>
-<body>
+<body data-page="book-now">
 
-  <!-- NAV -->
   <nav class="nav" id="nav">
     <ul class="nav-left">
-      <li><button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button></li>
-      <li><a class="nav-link" href="live-printing.html">Live Printing</a></li>
-      <li><a class="nav-link" href="hot-foil-stamping.html">Hot Foil Stamping</a></li>
-      <li><a class="nav-link" href="catalog.html">Catalog</a></li>
+      <li><button class="nav-hamburger" id="nav-hamburger" data-i18n-aria="nav.open_menu" aria-label="Open menu"><span></span><span></span><span></span></button></li>
+      <li><a class="nav-link" href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a></li>
+      <li><a class="nav-link" href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a></li>
+      <li><a class="nav-link" href="catalog.html" data-i18n="nav.catalog">Catalog</a></li>
     </ul>
     <a class="nav-logo" href="index.html">Monospace Events</a>
     <ul class="nav-right">
-      <li><a class="nav-link" href="index.html#about">About</a></li>
-      <li><a class="nav-link" href="hot-foil-stamping.html#faq">FAQ</a></li>
-      <li><a class="nav-link nav-cta" href="book-now.html" style="opacity:0.45;">Book Now &rarr;</a></li>
+      <li><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a></li>
+      <li><a class="nav-link" href="hot-foil-stamping.html#faq" data-i18n="nav.faq">FAQ</a></li>
+      <li class="lang-switcher">
+        <button class="lang-btn lang-active" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="nl">NL</button>
+      </li>
+      <li><a class="nav-link nav-cta" href="book-now.html" style="opacity:0.45;" data-i18n="nav.book_now">Book Now →</a></li>
     </ul>
   </nav>
 
-  <!-- MOBILE MENU -->
   <div class="mob-menu" id="mob-menu">
     <div class="mob-menu-head">
       <button class="mob-close" id="mob-close">&times;</button>
@@ -33,211 +37,194 @@
       <div class="mob-spacer"></div>
     </div>
     <nav class="mob-nav">
-      <a href="live-printing.html">Live Printing</a>
-      <a href="hot-foil-stamping.html">Hot Foil Stamping</a>
-      <a href="catalog.html">Catalog</a>
-      <a href="index.html#about">About</a>
-      <a href="hot-foil-stamping.html#faq">FAQ</a>
-      <a href="hot-foil-stamping.html#pricing">Pricing</a>
-      <a href="book-now.html" class="mob-book">Book Now &rarr;</a>
+      <a href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a>
+      <a href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a>
+      <a href="catalog.html" data-i18n="nav.catalog">Catalog</a>
+      <a href="index.html#about" data-i18n="nav.about">About</a>
+      <a href="hot-foil-stamping.html#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="hot-foil-stamping.html#pricing" data-i18n="mob.pricing">Pricing</a>
+      <a href="book-now.html" class="mob-book" data-i18n="mob.book_now">Book Now →</a>
     </nav>
+    <div class="mob-lang">
+      <button class="lang-btn lang-active" data-lang="en">EN</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="nl">NL</button>
+    </div>
   </div>
 
 
-  <!-- HERO -->
   <div class="book-hero">
-    <p class="page-hero-eyebrow">Book an Event</p>
-    <h1 class="page-hero-title">Get a Fixed Quote in 24 Hours</h1>
-    <p class="page-hero-subtitle">Tell us about your event and we'll come back with a tailored proposal — service fee, product recommendations matched to your audience, and a capacity plan based on expected footfall.</p>
+    <p class="page-hero-eyebrow" data-i18n="book.eyebrow">Book an Event</p>
+    <h1 class="page-hero-title" data-i18n="book.title">Get a Fixed Quote in 24 Hours</h1>
+    <p class="page-hero-subtitle" data-i18n="book.subtitle">Tell us about your event and we'll come back with a tailored proposal — service fee, product recommendations matched to your audience, and a capacity plan based on expected footfall.</p>
   </div>
 
 
-  <!-- FORM + SIDEBAR -->
-  <div class="book-form-wrap">
+  <div class="book-form-wrap" id="book-form">
 
-    <!-- SIDEBAR -->
     <div class="book-sidebar">
-      <h2 class="book-sidebar-title">What happens after you submit</h2>
-      <p class="book-sidebar-text">We review your brief and come back within 24 hours with a fixed quote, product recommendations matched to your event type and audience, and a capacity plan based on your expected footfall.</p>
-      <p class="book-sidebar-text">Once agreed, we create a bespoke stamping die from your logo artwork. All we need from you is a clean vector file — we handle the rest.</p>
+      <h2 class="book-sidebar-title" data-i18n="book.sidebar_title">What happens after you submit</h2>
+      <p class="book-sidebar-text" data-i18n="book.sidebar_body1">We review your brief and come back within 24 hours with a fixed quote, product recommendations matched to your event type and audience, and a capacity plan based on your expected footfall.</p>
+      <p class="book-sidebar-text" data-i18n="book.sidebar_body2">Once agreed, we create a bespoke stamping die from your logo artwork. All we need from you is a clean vector file — we handle the rest.</p>
 
       <div style="margin-top:2rem;">
-        <span class="book-contact-label">Email</span>
+        <span class="book-contact-label" data-i18n="book.email_label">Email</span>
         <p class="book-contact-item"><a href="mailto:hello@vormevents.com" style="color:var(--gold);">hello@vormevents.com</a></p>
       </div>
       <div style="margin-top:1rem;">
-        <span class="book-contact-label">Based in</span>
-        <p class="book-contact-item">The Netherlands &nbsp;&middot;&nbsp; Serving events across Europe</p>
+        <span class="book-contact-label" data-i18n="book.base_label">Based in</span>
+        <p class="book-contact-item" data-i18n="book.base_val">The Netherlands · Serving events across Europe</p>
       </div>
 
-      <!-- Pricing reminder -->
       <div style="background:#F9F9F9; border-radius:10px; padding:1.5rem; margin-top:2rem;">
-        <p style="font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:0.75rem;">Pricing reminder</p>
+        <p style="font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:0.75rem;" data-i18n="book.pricing_reminder">Pricing reminder</p>
         <p style="font-family:'Instrument Serif',serif; font-size:1.4rem; margin-bottom:0.25rem;">€1,600</p>
-        <p style="font-size:0.72rem; color:var(--muted); margin-bottom:0.5rem;">Starting from / 4 hours</p>
-        <p style="font-size:0.78rem; color:var(--text);">+ €200 per additional hour</p>
-        <p style="font-size:0.72rem; color:var(--muted); margin-top:0.75rem; font-style:italic;">Includes logistics within NL, machine rental, artisan team, all materials &amp; custom die.</p>
+        <p style="font-size:0.72rem; color:var(--muted); margin-bottom:0.5rem;" data-i18n="book.starting_from">Starting from / 4 hours</p>
+        <p style="font-size:0.78rem; color:var(--text);" data-i18n="book.extra_hour">+ €200 per additional hour</p>
+        <p style="font-size:0.72rem; color:var(--muted); margin-top:0.75rem; font-style:italic;" data-i18n="book.includes">Includes logistics within NL, machine rental, artisan team, all materials &amp; custom die.</p>
       </div>
     </div>
 
-    <!-- FORM -->
     <form class="book-form" name="book-now" action="#" onsubmit="handleSubmit(event)">
 
-      <!-- Company -->
       <div class="form-field">
-        <label for="company">Company Name *</label>
-        <input type="text" id="company" name="company" placeholder="Acme Corp" required />
+        <label for="company" data-i18n="book.f_company">Company Name *</label>
+        <input type="text" id="company" name="company" data-i18n-placeholder="book.ph_company" placeholder="Acme Corp" required />
       </div>
-
       <div class="form-field">
-        <label for="name">Your Name *</label>
-        <input type="text" id="name" name="name" placeholder="Jan de Vries" required />
+        <label for="name" data-i18n="book.f_name">Your Name *</label>
+        <input type="text" id="name" name="name" data-i18n-placeholder="book.ph_name" placeholder="Jan de Vries" required />
       </div>
-
-      <!-- Contact -->
       <div class="form-field">
-        <label for="email">Email Address *</label>
-        <input type="email" id="email" name="email" placeholder="you@company.com" required />
+        <label for="email" data-i18n="book.f_email">Email Address *</label>
+        <input type="email" id="email" name="email" data-i18n-placeholder="book.ph_email" placeholder="you@company.com" required />
       </div>
-
       <div class="form-field">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="+31 6 12345678" />
+        <label for="phone" data-i18n="book.f_phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" data-i18n-placeholder="book.ph_phone" placeholder="+31 6 12345678" />
       </div>
-
-      <!-- Event details -->
       <div class="form-field">
-        <label for="event-date">Event Date *</label>
+        <label for="event-date" data-i18n="book.f_date">Event Date *</label>
         <input type="date" id="event-date" name="event-date" required />
       </div>
-
       <div class="form-field">
-        <label for="event-time">Event Start Time</label>
+        <label for="event-time" data-i18n="book.f_time">Event Start Time</label>
         <input type="time" id="event-time" name="event-time" />
       </div>
-
       <div class="form-field">
-        <label for="duration">Duration Needed</label>
+        <label for="duration" data-i18n="book.f_duration">Duration Needed</label>
         <select id="duration" name="duration">
-          <option value="">Select hours</option>
-          <option value="4">4 hours — €1,600</option>
-          <option value="5">5 hours — €1,800</option>
-          <option value="6">6 hours — €2,000</option>
-          <option value="7">7 hours — €2,200</option>
-          <option value="8">8 hours — €2,400 (most popular)</option>
-          <option value="9">9 hours — €2,600</option>
-          <option value="10">10 hours — €2,800</option>
-          <option value="custom">Custom / multi-day</option>
+          <option value="" data-i18n="book.ph_duration">Select hours</option>
+          <option value="4" data-i18n="book.dur_4">4 hours — €1,600</option>
+          <option value="5" data-i18n="book.dur_5">5 hours — €1,800</option>
+          <option value="6" data-i18n="book.dur_6">6 hours — €2,000</option>
+          <option value="7" data-i18n="book.dur_7">7 hours — €2,200</option>
+          <option value="8" data-i18n="book.dur_8">8 hours — €2,400 (most popular)</option>
+          <option value="9" data-i18n="book.dur_9">9 hours — €2,600</option>
+          <option value="10" data-i18n="book.dur_10">10 hours — €2,800</option>
+          <option value="custom" data-i18n="book.dur_custom">Custom / multi-day</option>
         </select>
       </div>
-
       <div class="form-field">
-        <label for="guests">Expected Attendees</label>
+        <label for="guests" data-i18n="book.f_guests">Expected Attendees</label>
         <select id="guests" name="guests">
-          <option value="">Select range</option>
-          <option value="under-100">Under 100</option>
-          <option value="100-250">100–250</option>
-          <option value="250-500">250–500</option>
-          <option value="500-1000">500–1,000</option>
-          <option value="1000+">1,000+</option>
+          <option value="" data-i18n="book.ph_guests">Select range</option>
+          <option value="under-100" data-i18n="book.g_100">Under 100</option>
+          <option value="100-250" data-i18n="book.g_250">100–250</option>
+          <option value="250-500" data-i18n="book.g_500">250–500</option>
+          <option value="500-1000" data-i18n="book.g_1000">500–1,000</option>
+          <option value="1000+" data-i18n="book.g_1000p">1,000+</option>
         </select>
       </div>
-
       <div class="form-field">
-        <label for="location">Event Location / Venue *</label>
-        <input type="text" id="location" name="location" placeholder="RAI Amsterdam, Hall 7" required />
+        <label for="location" data-i18n="book.f_location">Event Location / Venue *</label>
+        <input type="text" id="location" name="location" data-i18n-placeholder="book.ph_location" placeholder="RAI Amsterdam, Hall 7" required />
       </div>
 
-      <!-- Items interested in -->
       <div class="form-field">
-        <label>Items Interested In</label>
+        <label data-i18n="book.f_items">Items Interested In</label>
         <div class="check-group">
-          <label class="check-pill"><input type="checkbox" name="items" value="journal-a5" /><span class="check-pill-label">Journal A5</span></label>
-          <label class="check-pill"><input type="checkbox" name="items" value="card-holder" /><span class="check-pill-label">Card Holder</span></label>
-          <label class="check-pill"><input type="checkbox" name="items" value="keyring" /><span class="check-pill-label">Keyring</span></label>
-          <label class="check-pill"><input type="checkbox" name="items" value="luggage-tag" /><span class="check-pill-label">Luggage Tag</span></label>
-          <label class="check-pill"><input type="checkbox" name="items" value="mousepad" /><span class="check-pill-label">Mousepad</span></label>
-          <label class="check-pill"><input type="checkbox" name="items" value="laptop-sleeve" /><span class="check-pill-label">Laptop Sleeve</span></label>
-          <label class="check-pill"><input type="checkbox" name="items" value="tote-bag" /><span class="check-pill-label">Tote Bag</span></label>
-          <label class="check-pill"><input type="checkbox" name="items" value="cork-items" /><span class="check-pill-label">Cork Items</span></label>
-          <label class="check-pill"><input type="checkbox" name="items" value="own-products" /><span class="check-pill-label">I'll supply my own</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="journal-a5" /><span class="check-pill-label" data-i18n="book.i_journal">Journal A5</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="card-holder" /><span class="check-pill-label" data-i18n="book.i_card">Card Holder</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="keyring" /><span class="check-pill-label" data-i18n="book.i_keyring">Keyring</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="luggage-tag" /><span class="check-pill-label" data-i18n="book.i_luggage">Luggage Tag</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="mousepad" /><span class="check-pill-label" data-i18n="book.i_mousepad">Mousepad</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="laptop-sleeve" /><span class="check-pill-label" data-i18n="book.i_laptop">Laptop Sleeve</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="tote-bag" /><span class="check-pill-label" data-i18n="book.i_tote">Tote Bag</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="cork-items" /><span class="check-pill-label" data-i18n="book.i_cork">Cork Items</span></label>
+          <label class="check-pill"><input type="checkbox" name="items" value="own-products" /><span class="check-pill-label" data-i18n="book.i_own">I'll supply my own</span></label>
         </div>
       </div>
 
-      <!-- Technique -->
       <div class="form-field">
-        <label>Stamping Technique</label>
+        <label data-i18n="book.f_technique">Stamping Technique</label>
         <div class="check-group">
-          <label class="check-pill"><input type="checkbox" name="technique" value="gold-foil" /><span class="check-pill-label">Gold Foil</span></label>
-          <label class="check-pill"><input type="checkbox" name="technique" value="colour-foil" /><span class="check-pill-label">Colour Foil</span></label>
-          <label class="check-pill"><input type="checkbox" name="technique" value="blind-press" /><span class="check-pill-label">Blind Press</span></label>
-          <label class="check-pill"><input type="checkbox" name="technique" value="logo-only" /><span class="check-pill-label">Logo Only</span></label>
-          <label class="check-pill"><input type="checkbox" name="technique" value="logo-name" /><span class="check-pill-label">Logo + Name</span></label>
-          <label class="check-pill"><input type="checkbox" name="technique" value="not-sure" /><span class="check-pill-label">Not sure yet</span></label>
+          <label class="check-pill"><input type="checkbox" name="technique" value="gold-foil" /><span class="check-pill-label" data-i18n="book.t_gold">Gold Foil</span></label>
+          <label class="check-pill"><input type="checkbox" name="technique" value="colour-foil" /><span class="check-pill-label" data-i18n="book.t_colour">Colour Foil</span></label>
+          <label class="check-pill"><input type="checkbox" name="technique" value="blind-press" /><span class="check-pill-label" data-i18n="book.t_blind">Blind Press</span></label>
+          <label class="check-pill"><input type="checkbox" name="technique" value="logo-only" /><span class="check-pill-label" data-i18n="book.t_logo">Logo Only</span></label>
+          <label class="check-pill"><input type="checkbox" name="technique" value="logo-name" /><span class="check-pill-label" data-i18n="book.t_logo_name">Logo + Name</span></label>
+          <label class="check-pill"><input type="checkbox" name="technique" value="not-sure" /><span class="check-pill-label" data-i18n="book.t_notsure">Not sure yet</span></label>
         </div>
       </div>
 
-      <!-- Quantity -->
       <div class="form-field">
-        <label for="quantity">Estimated Product Quantity</label>
+        <label for="quantity" data-i18n="book.f_qty">Estimated Product Quantity</label>
         <select id="quantity" name="quantity">
-          <option value="">Select range</option>
-          <option value="under-100">Under 100 items</option>
-          <option value="100-200">100–200 items</option>
-          <option value="200-400">200–400 items</option>
-          <option value="400-600">400–600 items</option>
-          <option value="600+">600+ items</option>
-          <option value="unsure">Not sure — advise me</option>
+          <option value="" data-i18n="book.ph_qty">Select range</option>
+          <option value="under-100" data-i18n="book.q_100">Under 100 items</option>
+          <option value="100-200" data-i18n="book.q_200">100–200 items</option>
+          <option value="200-400" data-i18n="book.q_400">200–400 items</option>
+          <option value="400-600" data-i18n="book.q_600">400–600 items</option>
+          <option value="600+" data-i18n="book.q_600p">600+ items</option>
+          <option value="unsure" data-i18n="book.q_unsure">Not sure — advise me</option>
         </select>
       </div>
 
-      <!-- Notes -->
       <div class="form-field">
-        <label for="notes">Anything else we should know?</label>
-        <textarea id="notes" name="notes" placeholder="Tell us about the event format, stand size, brand guidelines, or any special requirements..."></textarea>
+        <label for="notes" data-i18n="book.f_notes">Anything else we should know?</label>
+        <textarea id="notes" name="notes" data-i18n-placeholder="book.ph_notes" placeholder="Tell us about the event format, stand size, brand guidelines, or any special requirements..."></textarea>
       </div>
 
-      <!-- Submit -->
       <div class="form-submit">
-        <button type="submit" class="btn-dark">Send Enquiry &rarr;</button>
-        <p class="form-note">We'll respond within 24 hours.</p>
+        <button type="submit" class="btn-dark" data-i18n="book.submit">Send Enquiry →</button>
+        <p class="form-note" data-i18n="book.form_note">We'll respond within 24 hours.</p>
       </div>
 
     </form>
   </div>
 
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-top">
       <div>
         <p style="font-family:'Instrument Serif',serif; font-size:1rem; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:1rem;">Monospace Events</p>
-        <p class="footer-brand-text">Live hot foil stamping for trade shows, conferences, and corporate events across Europe. We draw the crowd, capture the lead, and send every attendee home with a luxury personalised keepsake.</p>
-        <p class="footer-email-label">Stay in the loop</p>
+        <p class="footer-brand-text" data-i18n="footer.brand_text">Live hot foil stamping for trade shows, conferences, and corporate events across Europe.</p>
+        <p class="footer-email-label" data-i18n="footer.stay_loop">Stay in the loop</p>
         <form class="footer-form" onsubmit="return false;">
-          <input type="email" placeholder="your@email.com" aria-label="Email" />
-          <button type="submit">Sign Up</button>
+          <input type="email" data-i18n-placeholder="footer.email_placeholder" placeholder="your@email.com" aria-label="Email" />
+          <button type="submit" data-i18n="footer.sign_up">Sign Up</button>
         </form>
       </div>
       <div>
-        <p class="footer-col-title">Services</p>
+        <p class="footer-col-title" data-i18n="footer.services">Services</p>
         <ul class="footer-col-links">
-          <li><a href="live-printing.html">Live Printing</a></li>
-          <li><a href="hot-foil-stamping.html">Hot Foil Stamping</a></li>
-          <li><a href="hot-foil-stamping.html#faq">FAQ</a></li>
-          <li><a href="hot-foil-stamping.html#pricing">Pricing</a></li>
+          <li><a href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a></li>
+          <li><a href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a></li>
+          <li><a href="hot-foil-stamping.html#faq" data-i18n="footer.faq">FAQ</a></li>
+          <li><a href="hot-foil-stamping.html#pricing" data-i18n="footer.pricing">Pricing</a></li>
         </ul>
       </div>
       <div>
-        <p class="footer-col-title">Company</p>
+        <p class="footer-col-title" data-i18n="footer.company">Company</p>
         <ul class="footer-col-links">
-          <li><a href="index.html#about">About Us</a></li>
-          <li><a href="catalog.html">Product Catalog</a></li>
-          <li><a href="book-now.html">Book an Event</a></li>
+          <li><a href="index.html#about" data-i18n="footer.about_us">About Us</a></li>
+          <li><a href="catalog.html" data-i18n="footer.product_catalog">Product Catalog</a></li>
+          <li><a href="book-now.html" data-i18n="footer.book_event">Book an Event</a></li>
         </ul>
       </div>
       <div>
-        <p class="footer-col-title">Follow</p>
+        <p class="footer-col-title" data-i18n="footer.follow">Follow</p>
         <ul class="footer-col-links">
           <li><a href="#">Instagram</a></li>
           <li><a href="#">LinkedIn</a></li>
@@ -246,14 +233,12 @@
         </ul>
       </div>
     </div>
-    <div class="footer-wordmark-wrap">
-      <div class="footer-wordmark">MONOSPACE EVENTS</div>
-    </div>
+    <div class="footer-wordmark-wrap"><div class="footer-wordmark">MONOSPACE EVENTS</div></div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2026 Monospace Events. All rights reserved.</p>
+      <p class="footer-copy" data-i18n="footer.rights">&copy; 2026 Monospace Events. All rights reserved.</p>
       <ul class="footer-legal">
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+        <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
       </ul>
     </div>
   </footer>

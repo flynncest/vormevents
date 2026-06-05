@@ -6,26 +6,30 @@
   <title>Live Printing for Trade Shows & Corporate Events | Monospace Events</title>
   <meta name="description" content="Full-colour live printing on canvas tote bags, pouches, and fabric items at your event stand. Personalised while they watch — high-impact, high-throughput, and impossible to throw away. Across Europe." />
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/i18n.js"></script>
 </head>
-<body>
+<body data-page="live-printing">
 
-  <!-- NAV -->
   <nav class="nav" id="nav">
     <ul class="nav-left">
-      <li><button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button></li>
-      <li><a class="nav-link" href="live-printing.html" style="opacity:0.45;">Live Printing</a></li>
-      <li><a class="nav-link" href="hot-foil-stamping.html">Hot Foil Stamping</a></li>
-      <li><a class="nav-link" href="catalog.html">Catalog</a></li>
+      <li><button class="nav-hamburger" id="nav-hamburger" data-i18n-aria="nav.open_menu" aria-label="Open menu"><span></span><span></span><span></span></button></li>
+      <li><a class="nav-link" href="live-printing.html" style="opacity:0.45;" data-i18n="nav.live_printing">Live Printing</a></li>
+      <li><a class="nav-link" href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a></li>
+      <li><a class="nav-link" href="catalog.html" data-i18n="nav.catalog">Catalog</a></li>
     </ul>
     <a class="nav-logo" href="index.html">Monospace Events</a>
     <ul class="nav-right">
-      <li><a class="nav-link" href="index.html#about">About</a></li>
-      <li><a class="nav-link" href="#faq">FAQ</a></li>
-      <li><a class="nav-link nav-cta" href="book-now.html">Book Now &rarr;</a></li>
+      <li><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a></li>
+      <li><a class="nav-link" href="#faq" data-i18n="nav.faq">FAQ</a></li>
+      <li class="lang-switcher">
+        <button class="lang-btn lang-active" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="nl">NL</button>
+      </li>
+      <li><a class="nav-link nav-cta" href="book-now.html" data-i18n="nav.book_now">Book Now →</a></li>
     </ul>
   </nav>
 
-  <!-- MOBILE MENU -->
   <div class="mob-menu" id="mob-menu">
     <div class="mob-menu-head">
       <button class="mob-close" id="mob-close">&times;</button>
@@ -33,147 +37,132 @@
       <div class="mob-spacer"></div>
     </div>
     <nav class="mob-nav">
-      <a href="live-printing.html">Live Printing</a>
-      <a href="hot-foil-stamping.html">Hot Foil Stamping</a>
-      <a href="catalog.html">Catalog</a>
-      <a href="index.html#about">About</a>
-      <a href="#faq">FAQ</a>
-      <a href="book-now.html" class="mob-book">Book Now &rarr;</a>
+      <a href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a>
+      <a href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a>
+      <a href="catalog.html" data-i18n="nav.catalog">Catalog</a>
+      <a href="index.html#about" data-i18n="nav.about">About</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="book-now.html" class="mob-book" data-i18n="mob.book_now">Book Now →</a>
     </nav>
+    <div class="mob-lang">
+      <button class="lang-btn lang-active" data-lang="en">EN</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="nl">NL</button>
+    </div>
   </div>
 
 
-  <!-- PAGE HERO -->
   <header class="page-hero">
-    <p class="page-hero-eyebrow">Service 01</p>
-    <h1 class="page-hero-title">Live Printing</h1>
-    <p class="page-hero-subtitle">
-      Full-colour digital printing on canvas tote bags, pouches, and fabric items — done live at your stand while they watch.
-      Bold, vivid, and impossible to throw away. High throughput, zero mess, and a keepsake that goes everywhere they go.
-    </p>
+    <p class="page-hero-eyebrow" data-i18n="lp.eyebrow">Service 01</p>
+    <h1 class="page-hero-title" data-i18n="lp.title">Live Printing</h1>
+    <p class="page-hero-subtitle" data-i18n="lp.subtitle">Full-colour digital printing on canvas tote bags, pouches, and fabric items — done live at your stand while they watch. Bold, vivid, and impossible to throw away. High throughput, zero mess, and a keepsake that goes everywhere they go.</p>
   </header>
-
-  <!-- HERO IMAGE PLACEHOLDER -->
   <div class="services-hero-image"></div>
 
 
-  <!-- WHAT YOU GET -->
   <section class="achieve-section">
-    <p class="section-eyebrow" style="padding: 0;">What You Get</p>
-    <h2 class="section-title" style="margin-top:0.5rem; margin-bottom:0;">Four outcomes. One activation.</h2>
-
+    <p class="section-eyebrow" style="padding:0;" data-i18n="lp.wyg_eyebrow">What You Get</p>
+    <h2 class="section-title" style="margin-top:0.5rem; margin-bottom:0;" data-i18n="lp.wyg_title">Four outcomes. One activation.</h2>
     <div class="achieve-grid">
-
       <div class="achieve-card">
         <div class="achieve-num">01</div>
-        <h3 class="achieve-title">Full-Colour at Your Stand</h3>
-        <p class="achieve-text">Not a stamp — a full photographic-quality print. Your logo in every colour, sharp edges, vivid on canvas. The visual contrast at your stand is immediate: while everyone else has a banner, you have a craft station people stop to watch.</p>
+        <h3 class="achieve-title" data-i18n="lp.o1_title">Full-Colour at Your Stand</h3>
+        <p class="achieve-text" data-i18n="lp.o1_text">Not a stamp — a full photographic-quality print. Your logo in every colour, sharp edges, vivid on canvas. The visual contrast at your stand is immediate: while everyone else has a banner, you have a craft station people stop to watch.</p>
       </div>
-
       <div class="achieve-card">
         <div class="achieve-num">02</div>
-        <h3 class="achieve-title">Items They Use Every Day</h3>
-        <p class="achieve-text">A canvas tote goes to the supermarket, the gym, the airport. Every trip out is another impression. Your brand on something people reach for — not something they leave in a conference bag and forget.</p>
+        <h3 class="achieve-title" data-i18n="lp.o2_title">Items They Use Every Day</h3>
+        <p class="achieve-text" data-i18n="lp.o2_text">A canvas tote goes to the supermarket, the gym, the airport. Every trip out is another impression. Your brand on something people reach for — not something they leave in a conference bag and forget.</p>
       </div>
-
       <div class="achieve-card">
         <div class="achieve-num">03</div>
-        <h3 class="achieve-title">High Throughput, No Waiting</h3>
-        <p class="achieve-text">Live printing runs at 15–20 items per hour. For high-footfall events, a second printer can be deployed to double output without sacrificing quality or the experience of watching it happen.</p>
+        <h3 class="achieve-title" data-i18n="lp.o3_title">High Throughput, No Waiting</h3>
+        <p class="achieve-text" data-i18n="lp.o3_text">Live printing runs at 15–20 items per hour. For high-footfall events, a second printer can be deployed to double output without sacrificing quality or the experience of watching it happen.</p>
       </div>
-
       <div class="achieve-card">
         <div class="achieve-num">04</div>
-        <h3 class="achieve-title">Personalise the Moment</h3>
-        <p class="achieve-text">Add the attendee's name, initials, or a custom message alongside your logo. Each item is made for them, in front of them — and that's exactly what makes them keep it and show it to people.</p>
+        <h3 class="achieve-title" data-i18n="lp.o4_title">Personalise the Moment</h3>
+        <p class="achieve-text" data-i18n="lp.o4_text">Add the attendee's name, initials, or a custom message alongside your logo. Each item is made for them, in front of them — and that's exactly what makes them keep it and show it to people.</p>
       </div>
-
     </div>
   </section>
 
 
-  <!-- MATERIALS -->
   <section class="materials-section">
-    <div style="padding: 0;">
-      <p class="section-eyebrow">Our Materials</p>
-      <h2 class="section-title" style="margin-bottom:0;">What we print on</h2>
+    <div style="padding:0;">
+      <p class="section-eyebrow" data-i18n="lp.mat_eyebrow">Our Materials</p>
+      <h2 class="section-title" style="margin-bottom:0;" data-i18n="lp.mat_title">What we print on</h2>
     </div>
-
     <div class="materials-grid">
-
       <div class="material-card">
         <div class="material-card-img"></div>
         <div class="material-card-body">
-          <h2 class="material-card-title">Canvas</h2>
-          <p class="material-card-text">Heavyweight woven canvas — structured enough to print on with precision, durable enough to carry daily. Colour sits vivid and permanent on natural or dyed canvas.</p>
+          <h2 class="material-card-title" data-i18n="lp.mat1_title">Canvas</h2>
+          <p class="material-card-text" data-i18n="lp.mat1_text">Heavyweight woven canvas — structured enough to print on with precision, durable enough to carry daily. Colour sits vivid and permanent on natural or dyed canvas.</p>
           <ul class="material-card-features">
-            <li>Tote bags, shoppers, backpacks, drawstring bags</li>
-            <li>Full-colour digital print or single-colour logo</li>
+            <li data-i18n="lp.mat1_f1">Tote bags, shoppers, backpacks, drawstring bags</li>
+            <li data-i18n="lp.mat1_f2">Full-colour digital print or single-colour logo</li>
           </ul>
         </div>
       </div>
-
       <div class="material-card">
         <div class="material-card-img"></div>
         <div class="material-card-body">
-          <h2 class="material-card-title">Cotton</h2>
-          <p class="material-card-text">Soft, everyday cotton — the material people reach for. Prints anchor to the fibres for a lasting, wash-resistant finish that doesn't crack or peel over time.</p>
+          <h2 class="material-card-title" data-i18n="lp.mat2_title">Cotton</h2>
+          <p class="material-card-text" data-i18n="lp.mat2_text">Soft, everyday cotton — the material people reach for. Prints anchor to the fibres for a lasting, wash-resistant finish that doesn't crack or peel over time.</p>
           <ul class="material-card-features">
-            <li>Tote bags, t-shirts, pouches, cotton accessories</li>
-            <li>Full-colour digital print</li>
+            <li data-i18n="lp.mat2_f1">Tote bags, t-shirts, pouches, cotton accessories</li>
+            <li data-i18n="lp.mat2_f2">Full-colour digital print</li>
           </ul>
         </div>
       </div>
-
       <div class="material-card">
         <div class="material-card-img"></div>
         <div class="material-card-body">
-          <h2 class="material-card-title">Mixed Fabric</h2>
-          <p class="material-card-text">Polyester blends and technical fabrics for event merchandise that goes beyond the office — caps, sport bags, and functional accessories with lasting print quality.</p>
+          <h2 class="material-card-title" data-i18n="lp.mat3_title">Mixed Fabric</h2>
+          <p class="material-card-text" data-i18n="lp.mat3_text">Polyester blends and technical fabrics for event merchandise that goes beyond the office — caps, sport bags, and functional accessories with lasting print quality.</p>
           <ul class="material-card-features">
-            <li>Caps, sports bags, functional accessories</li>
-            <li>Sublimation or direct-to-film print</li>
+            <li data-i18n="lp.mat3_f1">Caps, sports bags, functional accessories</li>
+            <li data-i18n="lp.mat3_f2">Sublimation or direct-to-film print</li>
           </ul>
         </div>
       </div>
-
     </div>
   </section>
 
 
-  <!-- CAPACITY -->
   <section class="capacity-section">
     <div class="capacity-inner">
       <div>
-        <div class="capacity-num">15–20</div>
-        <p class="capacity-label">items printed per hour</p>
-        <p class="capacity-desc">Our live printing station operates at 15–20 personalised items per hour. This allows time for personalisation, quality checking, and the all-important moment of watching it print live.</p>
-        <p class="capacity-desc" style="margin-top:1rem;">For high-footfall events, a second printer doubles capacity proportionally. Ask about dual-station setups in your quote.</p>
+        <div class="capacity-num" data-i18n="lp.cap_num">15–20</div>
+        <p class="capacity-label" data-i18n="lp.cap_label">items printed per hour</p>
+        <p class="capacity-desc" data-i18n="lp.cap_desc1">Our live printing station operates at 15–20 personalised items per hour. This allows time for personalisation, quality checking, and the all-important moment of watching it print live.</p>
+        <p class="capacity-desc" style="margin-top:1rem;" data-i18n="lp.cap_desc2">For high-footfall events, a second printer doubles capacity proportionally. Ask about dual-station setups in your quote.</p>
       </div>
       <div>
-        <p class="section-eyebrow">Plan Your Quantities</p>
-        <h3 class="capacity-title">How many products should you have ready?</h3>
-        <p style="font-size:0.82rem; color:var(--muted); line-height:1.75; margin-bottom:1.25rem;">Based on our throughput, here are planning benchmarks. We recommend a 10% buffer above expected footfall.</p>
+        <p class="section-eyebrow" data-i18n="lp.cap_plan_eyebrow">Plan Your Quantities</p>
+        <h3 class="capacity-title" data-i18n="lp.cap_plan_title">How many products should you have ready?</h3>
+        <p style="font-size:0.82rem; color:var(--muted); line-height:1.75; margin-bottom:1.25rem;" data-i18n="lp.cap_plan_desc">Based on our throughput, here are planning benchmarks. We recommend a 10% buffer above expected footfall.</p>
         <div class="capacity-examples">
           <div class="capacity-example">
-            <span class="capacity-example-label">4-hour event (half day)</span>
-            <span class="capacity-example-val">60–80 products</span>
+            <span class="capacity-example-label" data-i18n="cap.4hr_label">4-hour event (half day)</span>
+            <span class="capacity-example-val" data-i18n="cap.4hr_print">60–80 products</span>
           </div>
           <div class="capacity-example">
-            <span class="capacity-example-label">6-hour event</span>
-            <span class="capacity-example-val">90–130 products</span>
+            <span class="capacity-example-label" data-i18n="cap.6hr_label">6-hour event</span>
+            <span class="capacity-example-val" data-i18n="cap.6hr_print">90–130 products</span>
           </div>
           <div class="capacity-example">
-            <span class="capacity-example-label">8-hour event (full day)</span>
-            <span class="capacity-example-val">120–170 products</span>
+            <span class="capacity-example-label" data-i18n="cap.8hr_label">8-hour event (full day)</span>
+            <span class="capacity-example-val" data-i18n="cap.8hr_print">120–170 products</span>
           </div>
           <div class="capacity-example">
-            <span class="capacity-example-label">10-hour event</span>
-            <span class="capacity-example-val">150–220 products</span>
+            <span class="capacity-example-label" data-i18n="cap.10hr_label">10-hour event</span>
+            <span class="capacity-example-val" data-i18n="cap.10hr_print">150–220 products</span>
           </div>
           <div class="capacity-example">
-            <span class="capacity-example-label">Dual-printer setup</span>
-            <span class="capacity-example-val">Double the above</span>
+            <span class="capacity-example-label" data-i18n="cap.dual_label">Dual-printer setup</span>
+            <span class="capacity-example-val" data-i18n="cap.dual_val">Double the above</span>
           </div>
         </div>
       </div>
@@ -181,125 +170,75 @@
   </section>
 
 
-  <!-- PRICING -->
   <section class="pricing-section" id="pricing">
     <div class="pricing-layout">
-
       <div class="pricing-left">
-        <p class="section-eyebrow">Investment</p>
-        <h2 class="pricing-title">Pricing tailored to your event</h2>
-        <p style="font-size:0.88rem; color:var(--muted); line-height:1.85; margin-bottom:1.5rem;">Live printing pricing varies by event duration, volume, and artwork complexity. We put together a clear, itemised quote based on your brief — no surprises.</p>
+        <p class="section-eyebrow" data-i18n="pricing.eyebrow">Investment</p>
+        <h2 class="pricing-title" data-i18n="lp.pricing_title">Pricing tailored to your event</h2>
+        <p style="font-size:0.88rem; color:var(--muted); line-height:1.85; margin-bottom:1.5rem;" data-i18n="lp.pricing_body">Live printing pricing varies by event duration, volume, and artwork complexity. We put together a clear, itemised quote based on your brief — no surprises.</p>
         <div class="pricing-includes">
-          <span class="pricing-inc-item">Logistics within the Netherlands</span>
-          <span class="pricing-inc-item">Printing equipment rental</span>
-          <span class="pricing-inc-item">Professional print operators</span>
-          <span class="pricing-inc-item">Setup &amp; full breakdown</span>
-          <span class="pricing-inc-item">All printing materials &amp; inks</span>
+          <span class="pricing-inc-item" data-i18n="pricing.inc1">Logistics within the Netherlands</span>
+          <span class="pricing-inc-item" data-i18n="lp.pricing_inc2">Printing equipment rental</span>
+          <span class="pricing-inc-item" data-i18n="lp.pricing_inc3">Professional print operators</span>
+          <span class="pricing-inc-item" data-i18n="pricing.inc4">Setup & full breakdown</span>
+          <span class="pricing-inc-item" data-i18n="lp.pricing_inc5">All printing materials & inks</span>
         </div>
-        <p class="pricing-note-sm">* Product cost not included. Travel outside NL quoted separately.</p>
+        <p class="pricing-note-sm" data-i18n="lp.pricing_note">* Product cost not included. Travel outside NL quoted separately.</p>
         <div style="margin-top:1.5rem;">
-          <a class="btn-dark" href="book-now.html">Get a Quote &rarr;</a>
+          <a class="btn-dark" href="book-now.html" data-i18n="lp.get_quote">Get a Quote →</a>
         </div>
       </div>
-
       <div class="pricing-right" style="display:flex; flex-direction:column; justify-content:center; gap:1.5rem;">
-        <p class="section-eyebrow">How it works</p>
-        <h3 style="font-family:'Instrument Serif',serif; font-size:clamp(1.3rem,2.2vw,1.9rem); font-weight:400; line-height:1.2;">Tell us about your event.<br>We'll build a quote around it.</h3>
-        <p style="font-size:0.84rem; color:var(--muted); line-height:1.8;">Share your event date, venue, expected footfall, and the items you have in mind. We'll come back with a clear breakdown of service fee and product costs — usually within 24 hours.</p>
-        <a class="value-cta" href="book-now.html">Start your brief &rarr;</a>
+        <p class="section-eyebrow" data-i18n="lp.how_eyebrow">How it works</p>
+        <h3 style="font-family:'Instrument Serif',serif; font-size:clamp(1.3rem,2.2vw,1.9rem); font-weight:400; line-height:1.2;" data-i18n-html="lp.how_title">Tell us about your event.<br>We'll build a quote around it.</h3>
+        <p style="font-size:0.84rem; color:var(--muted); line-height:1.8;" data-i18n="lp.how_body">Share your event date, venue, expected footfall, and the items you have in mind. We'll come back with a clear breakdown of service fee and product costs — usually within 24 hours.</p>
+        <a class="value-cta" href="book-now.html" data-i18n="lp.start_brief">Start your brief →</a>
       </div>
-
     </div>
   </section>
 
 
-  <!-- FAQ -->
   <section class="faq-section" id="faq">
     <div class="faq-inner">
-      <p class="section-eyebrow" style="text-align:center;">Common Questions</p>
-      <h2 class="section-title" style="text-align:center; margin-bottom:0;">Everything you need to know</h2>
-
+      <p class="section-eyebrow" style="text-align:center;" data-i18n="faq.eyebrow">Common Questions</p>
+      <h2 class="section-title" style="text-align:center; margin-bottom:0;" data-i18n="faq.title">Everything you need to know</h2>
       <div class="faq-grid">
 
         <div class="faq-item">
-          <button class="faq-question">What is live printing and how does it work? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Live printing uses digital printing technology — direct-to-film (DTF) or sublimation — to apply full-colour designs onto fabric and canvas items at your event stand, in front of your attendees. They choose an item, you capture their details, and they watch their personalised item print in minutes. It's fast, vivid, and a genuine crowd-stopper.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="lp.faq1_q">What is live printing and how does it work? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="lp.faq1_a">Live printing uses digital printing technology to apply full-colour designs onto fabric and canvas items at your event stand.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">What types of items can be printed? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>We specialise in canvas and fabric items — tote bags, cotton shoppers, canvas pouches, drawstring bags, and similar items. Browse the Live Printing section of our catalog for the current range. If you have something specific in mind that isn't listed, ask us — we can often source it.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="lp.faq2_q">What types of items can be printed? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="lp.faq2_a">We specialise in canvas and fabric items — tote bags, cotton shoppers, canvas pouches, drawstring bags, and similar items.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">How fast is live printing? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>One printing station operates at approximately 15–20 items per hour. This includes print time, personalisation, and quality checking. For higher-volume events, a second printer can be added to double throughput. Let us know your expected footfall and we'll recommend the right setup.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="lp.faq3_q">How fast is live printing? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="lp.faq3_a">One printing station operates at approximately 15–20 items per hour.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">Can we personalise with the attendee's name? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Yes — and this is what makes it special. We can print your logo alongside the attendee's name or initials in the same design pass. Each item is unique to the person receiving it, which is why they keep it. The name is typed in at the station and printed automatically as part of the design.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="lp.faq4_q">Can we personalise with the attendee's name? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="lp.faq4_a">Yes — and this is what makes it special. We can print your logo alongside the attendee's name or initials in the same design pass.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">Can we combine live printing with hot foil stamping? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Yes — running both services at one stand is increasingly popular. Attendees choose between a canvas item printed in full colour or a leather piece stamped in gold. The combined visual draw is significant and gives your stand real range. We need approximately 3m × 1.5m of floor space and two team members. Contact us to plan a dual-service setup.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="lp.faq5_q">Can we combine live printing with hot foil stamping? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="lp.faq5_a">Yes — running both services at one stand is increasingly popular.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">Do you supply the products, or do we need to source them? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Both work. We supply a range of printable canvas and fabric items — browse our catalog. If you order through us, please allow 4–5 weeks lead time for bulk orders. Alternatively, source your own and we'll print them on the day.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="lp.faq6_q">Do you supply the products, or do we need to source them? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="lp.faq6_a">Both work. We supply a range of printable canvas and fabric items — browse our catalog.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">We already have our own products. Can you print them? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Yes. We can print on client-supplied fabric and canvas merchandise at no extra cost, provided the items are suitable for digital printing. Send us a sample before the event and we'll confirm suitability and do a test print.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="lp.faq7_q">We already have our own products. Can you print them? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="lp.faq7_a">Yes. We can print on client-supplied fabric and canvas merchandise at no extra cost.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">What does the service include and how much space do you need? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>The service fee includes: logistics within the Netherlands, printing equipment, all inks and materials, professional print operators, setup before the event, and full breakdown after. We need approximately 1.5m × 1m of floor space and one standard 240v power outlet per printer. Events outside the Netherlands may incur a travel supplement.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="lp.faq8_q">What does the service include and how much space do you need? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="lp.faq8_a">The service fee includes: logistics within the Netherlands, printing equipment, all inks and materials, professional print operators, setup before the event, and full breakdown after.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">Can you work at private or internal corporate events? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Absolutely. We work at trade shows, conferences, internal company events, product launches, client hospitality days, and award ceremonies. Any event where you want to give guests a personalised keepsake is a fit.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="lp.faq9_q">Can you work at private or internal corporate events? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="lp.faq9_a">Absolutely. We work at trade shows, conferences, internal company events, product launches, client hospitality days, and award ceremonies.</p></div></div>
         </div>
 
       </div>
@@ -307,11 +246,10 @@
   </section>
 
 
-  <!-- GALLERY -->
   <section class="gallery-section">
     <div class="gallery-header">
-      <p class="section-eyebrow">The Work</p>
-      <h2 class="section-title">From the event floor</h2>
+      <p class="section-eyebrow" data-i18n="section.gallery_eyebrow">The Work</p>
+      <h2 class="section-title" data-i18n="section.gallery_title">From the event floor</h2>
     </div>
     <div class="gallery-track-wrap">
       <div class="gallery-track">
@@ -336,37 +274,36 @@
   </section>
 
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-top">
       <div>
         <p style="font-family:'Instrument Serif',serif; font-size:1rem; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:1rem;">Monospace Events</p>
-        <p class="footer-brand-text">Live printing and hot foil stamping for trade shows, conferences, and corporate events across Europe. We draw the crowd, personalise the moment, and send every attendee home with a keepsake they'll use for years.</p>
-        <p class="footer-email-label">Stay in the loop</p>
+        <p class="footer-brand-text" data-i18n="footer.brand_text">Live printing and hot foil stamping for trade shows, conferences, and corporate events across Europe.</p>
+        <p class="footer-email-label" data-i18n="footer.stay_loop">Stay in the loop</p>
         <form class="footer-form" onsubmit="return false;">
-          <input type="email" placeholder="your@email.com" aria-label="Email" />
-          <button type="submit">Sign Up</button>
+          <input type="email" data-i18n-placeholder="footer.email_placeholder" placeholder="your@email.com" aria-label="Email" />
+          <button type="submit" data-i18n="footer.sign_up">Sign Up</button>
         </form>
       </div>
       <div>
-        <p class="footer-col-title">Services</p>
+        <p class="footer-col-title" data-i18n="footer.services">Services</p>
         <ul class="footer-col-links">
-          <li><a href="live-printing.html">Live Printing</a></li>
-          <li><a href="hot-foil-stamping.html">Hot Foil Stamping</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="hot-foil-stamping.html#pricing">Pricing</a></li>
+          <li><a href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a></li>
+          <li><a href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a></li>
+          <li><a href="#faq" data-i18n="footer.faq">FAQ</a></li>
+          <li><a href="hot-foil-stamping.html#pricing" data-i18n="footer.pricing">Pricing</a></li>
         </ul>
       </div>
       <div>
-        <p class="footer-col-title">Company</p>
+        <p class="footer-col-title" data-i18n="footer.company">Company</p>
         <ul class="footer-col-links">
-          <li><a href="index.html#about">About Us</a></li>
-          <li><a href="catalog.html">Product Catalog</a></li>
-          <li><a href="book-now.html">Book an Event</a></li>
+          <li><a href="index.html#about" data-i18n="footer.about_us">About Us</a></li>
+          <li><a href="catalog.html" data-i18n="footer.product_catalog">Product Catalog</a></li>
+          <li><a href="book-now.html" data-i18n="footer.book_event">Book an Event</a></li>
         </ul>
       </div>
       <div>
-        <p class="footer-col-title">Follow</p>
+        <p class="footer-col-title" data-i18n="footer.follow">Follow</p>
         <ul class="footer-col-links">
           <li><a href="#">Instagram</a></li>
           <li><a href="#">LinkedIn</a></li>
@@ -375,14 +312,12 @@
         </ul>
       </div>
     </div>
-    <div class="footer-wordmark-wrap">
-      <div class="footer-wordmark">MONOSPACE EVENTS</div>
-    </div>
+    <div class="footer-wordmark-wrap"><div class="footer-wordmark">MONOSPACE EVENTS</div></div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2026 Monospace Events. All rights reserved.</p>
+      <p class="footer-copy" data-i18n="footer.rights">&copy; 2026 Monospace Events. All rights reserved.</p>
       <ul class="footer-legal">
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+        <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
       </ul>
     </div>
   </footer>

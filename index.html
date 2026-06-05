@@ -6,24 +6,28 @@
   <title>Live Event Activations for Trade Shows & Corporate Events | Monospace Events</title>
   <meta name="description" content="Live printing and hot foil stamping at your next trade show, conference, or corporate event. Draws crowds, captures leads, and sends every attendee home with a personalised keepsake. Across Europe. From €1,600." />
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/i18n.js"></script>
 </head>
-<body>
+<body data-page="index">
 
   <!-- NAV -->
   <nav class="nav nav--hero-page" id="nav">
     <ul class="nav-left">
-      <li><button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button></li>
-      <li><a class="nav-link" href="live-printing.html">Live Printing</a></li>
-      <li><a class="nav-link" href="hot-foil-stamping.html">Hot Foil Stamping</a></li>
-      <li><a class="nav-link" href="catalog.html">Catalog</a></li>
+      <li><button class="nav-hamburger" id="nav-hamburger" data-i18n-aria="nav.open_menu" aria-label="Open menu"><span></span><span></span><span></span></button></li>
+      <li><a class="nav-link" href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a></li>
+      <li><a class="nav-link" href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a></li>
+      <li><a class="nav-link" href="catalog.html" data-i18n="nav.catalog">Catalog</a></li>
     </ul>
-
     <a class="nav-logo" href="index.html">Monospace Events</a>
-
     <ul class="nav-right">
-      <li><a class="nav-link" href="#about">About</a></li>
-      <li><a class="nav-link" href="hot-foil-stamping.html#faq">FAQ</a></li>
-      <li><a class="nav-link nav-cta" href="book-now.html">Book Now &rarr;</a></li>
+      <li><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li>
+      <li><a class="nav-link" href="hot-foil-stamping.html#faq" data-i18n="nav.faq">FAQ</a></li>
+      <li class="lang-switcher">
+        <button class="lang-btn lang-active" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="nl">NL</button>
+      </li>
+      <li><a class="nav-link nav-cta" href="book-now.html" data-i18n="nav.book_now">Book Now →</a></li>
     </ul>
   </nav>
 
@@ -35,14 +39,19 @@
       <div class="mob-spacer"></div>
     </div>
     <nav class="mob-nav">
-      <a href="live-printing.html">Live Printing</a>
-      <a href="hot-foil-stamping.html">Hot Foil Stamping</a>
-      <a href="catalog.html">Catalog</a>
-      <a href="#about">About</a>
-      <a href="hot-foil-stamping.html#faq">FAQ</a>
-      <a href="#pricing">Pricing</a>
-      <a href="book-now.html" class="mob-book">Book Now &rarr;</a>
+      <a href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a>
+      <a href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a>
+      <a href="catalog.html" data-i18n="nav.catalog">Catalog</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="hot-foil-stamping.html#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#pricing" data-i18n="mob.pricing">Pricing</a>
+      <a href="book-now.html" class="mob-book" data-i18n="mob.book_now">Book Now →</a>
     </nav>
+    <div class="mob-lang">
+      <button class="lang-btn lang-active" data-lang="en">EN</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="nl">NL</button>
+    </div>
   </div>
 
 
@@ -51,8 +60,8 @@
     <div class="hero-bg"></div>
     <div class="hero-body">
       <div class="hero-content">
-        <h1 class="hero-title">The Activation<br>That Makes Your<br><em>Brand Unforgettable</em></h1>
-        <p class="hero-subtitle">Live printing &nbsp;&middot;&nbsp; Hot foil stamping &nbsp;&middot;&nbsp; Trade shows &amp; corporate events across Europe &nbsp;&middot;&nbsp; From €1,600</p>
+        <h1 class="hero-title" data-i18n-html="index.hero_title">The Activation<br>That Makes Your<br><em>Brand Unforgettable</em></h1>
+        <p class="hero-subtitle" data-i18n="index.hero_subtitle">Live printing · Hot foil stamping · Trade shows & corporate events across Europe · From €1,600</p>
       </div>
     </div>
   </section>
@@ -61,13 +70,8 @@
   <!-- VALUE STATEMENT -->
   <section class="value-section">
     <div class="value-inner">
-      <h2 class="value-title">
-        Every person at your event is a potential client.
-        Most take a leaflet they won't open.
-        Give them something they'll carry to every meeting.
-        Brand awareness that compounds long after the event.
-      </h2>
-      <a class="value-cta" href="services.html">See how it works &rarr;</a>
+      <h2 class="value-title" data-i18n="index.value_title">Every person at your event is a potential client. Most take a leaflet they won't open. Give them something they'll carry to every meeting. Brand awareness that compounds long after the event.</h2>
+      <a class="value-cta" href="services.html" data-i18n="index.value_cta">See how it works →</a>
     </div>
   </section>
 
@@ -81,8 +85,8 @@
       <div class="service-card-foot">
         <div>
           <span class="service-card-tag">01</span>
-          <h3 class="service-card-title">Live Printing</h3>
-          <p class="service-card-desc">Full-colour digital printing on canvas tote bags, pouches, and fabric items — done live while they watch. Bold, vibrant, and impossible to throw away.</p>
+          <h3 class="service-card-title" data-i18n="index.card1_title">Live Printing</h3>
+          <p class="service-card-desc" data-i18n="index.card1_desc">Full-colour digital printing on canvas tote bags, pouches, and fabric items — done live while they watch. Bold, vibrant, and impossible to throw away.</p>
         </div>
         <div class="arrow-btn">&#8594;</div>
       </div>
@@ -94,8 +98,8 @@
       <div class="service-card-foot">
         <div>
           <span class="service-card-tag">02</span>
-          <h3 class="service-card-title">Hot Foil Stamping</h3>
-          <p class="service-card-desc">A heated die presses your logo and the attendee's name into luxury vegan leather — journals, card holders, laptop sleeves. The gold reveal stops people mid-stride.</p>
+          <h3 class="service-card-title" data-i18n="index.card2_title">Hot Foil Stamping</h3>
+          <p class="service-card-desc" data-i18n="index.card2_desc">A heated die presses your logo and the attendee's name into luxury vegan leather — journals, card holders, laptop sleeves. The gold reveal stops people mid-stride.</p>
         </div>
         <div class="arrow-btn">&#8594;</div>
       </div>
@@ -107,8 +111,8 @@
       <div class="service-card-foot">
         <div>
           <span class="service-card-tag">03</span>
-          <h3 class="service-card-title">Lead Capture Built In</h3>
-          <p class="service-card-desc">The 2–3 minute personalisation window is your window. Badge scan, short conversation, contact added. Warm leads captured while they're smiling — no chasing required.</p>
+          <h3 class="service-card-title" data-i18n="index.card3_title">Lead Capture Built In</h3>
+          <p class="service-card-desc" data-i18n="index.card3_desc">The 2–3 minute personalisation window is your window. Badge scan, short conversation, contact added. Warm leads captured while they're smiling — no chasing required.</p>
         </div>
         <div class="arrow-btn">&#8594;</div>
       </div>
@@ -120,36 +124,36 @@
   <section class="how-section">
     <div class="how-header">
       <div>
-        <p class="section-eyebrow">The Process</p>
-        <h2 class="section-title">How it works</h2>
+        <p class="section-eyebrow" data-i18n="how.eyebrow">The Process</p>
+        <h2 class="section-title" data-i18n="how.title">How it works</h2>
       </div>
-      <a class="value-cta" href="services.html">Full service details &rarr;</a>
+      <a class="value-cta" href="services.html" data-i18n="how.full_details">Full service details →</a>
     </div>
     <div class="how-steps">
       <div class="how-step">
         <p class="how-step-num">01</p>
-        <h3 class="how-step-title">Brief & Plan</h3>
-        <p class="how-step-text">Share your event details, brand guidelines, and expected footfall. We plan setup and recommend the right service for your goals.</p>
+        <h3 class="how-step-title" data-i18n="how.step1_title">Brief & Plan</h3>
+        <p class="how-step-text" data-i18n="how.step1_text">Share your event details, brand guidelines, and expected footfall. We plan setup and recommend the right service for your goals.</p>
       </div>
       <div class="how-step">
         <p class="how-step-num">02</p>
-        <h3 class="how-step-title">Choose Your Service</h3>
-        <p class="how-step-text">Live printing, hot foil stamping — or both. Then browse our catalog to choose the products your guests will personalise.</p>
+        <h3 class="how-step-title" data-i18n="how.step2_title">Choose Your Service</h3>
+        <p class="how-step-text" data-i18n="how.step2_text">Live printing, hot foil stamping — or both. Then browse our catalog to choose the products your guests will personalise.</p>
       </div>
       <div class="how-step">
         <p class="how-step-num">03</p>
-        <h3 class="how-step-title">We Prepare</h3>
-        <p class="how-step-text">Artwork finalised. For hot foil: custom die created (allow 3–4 weeks). For printing: design approved and loaded. Everything ready before your event.</p>
+        <h3 class="how-step-title" data-i18n="how.step3_title">We Prepare</h3>
+        <p class="how-step-text" data-i18n="how.step3_text">Artwork finalised. For hot foil: custom die created (allow 3–4 weeks). For printing: design approved and loaded. Everything ready before your event.</p>
       </div>
       <div class="how-step">
         <p class="how-step-num">04</p>
-        <h3 class="how-step-title">We Arrive & Set Up</h3>
-        <p class="how-step-text">Our team arrives early and sets up a premium station at your stand, ready to go before doors open.</p>
+        <h3 class="how-step-title" data-i18n="how.step4_title">We Arrive & Set Up</h3>
+        <p class="how-step-text" data-i18n="how.step4_text">Our team arrives early and sets up a premium station at your stand, ready to go before doors open.</p>
       </div>
       <div class="how-step">
         <p class="how-step-num">05</p>
-        <h3 class="how-step-title">Live Personalisation</h3>
-        <p class="how-step-text">Guests personalise their items in real time. You capture leads. Everyone leaves happy.</p>
+        <h3 class="how-step-title" data-i18n="how.step5_title">Live Personalisation</h3>
+        <p class="how-step-text" data-i18n="how.step5_text">Guests personalise their items in real time. You capture leads. Everyone leaves happy.</p>
       </div>
     </div>
   </section>
@@ -158,70 +162,64 @@
   <!-- PRICING -->
   <section class="pricing-section" id="pricing">
     <div class="pricing-layout">
-
-      <!-- LEFT: what's included -->
       <div class="pricing-left">
-        <p class="section-eyebrow">Investment</p>
-        <h2 class="pricing-title">Simple pricing, no surprises</h2>
+        <p class="section-eyebrow" data-i18n="pricing.eyebrow">Investment</p>
+        <h2 class="pricing-title" data-i18n="pricing.title_index">Simple pricing, no surprises</h2>
         <div class="pricing-includes">
-          <span class="pricing-inc-item">Logistics within the Netherlands</span>
-          <span class="pricing-inc-item">Equipment &amp; machine rental</span>
-          <span class="pricing-inc-item">Professional artisan team</span>
-          <span class="pricing-inc-item">Setup &amp; full breakdown</span>
-          <span class="pricing-inc-item">All materials &amp; custom die (hot foil)</span>
+          <span class="pricing-inc-item" data-i18n="pricing.inc1">Logistics within the Netherlands</span>
+          <span class="pricing-inc-item" data-i18n="pricing.inc2">Equipment & machine rental</span>
+          <span class="pricing-inc-item" data-i18n="pricing.inc3">Professional artisan team</span>
+          <span class="pricing-inc-item" data-i18n="pricing.inc4">Setup & full breakdown</span>
+          <span class="pricing-inc-item" data-i18n="pricing.inc5_foil">All materials & custom die (hot foil)</span>
         </div>
         <div class="pricing-total-note">
-          <p class="pricing-total-label">How to estimate your total</p>
-          <p class="pricing-total-formula">Service fee + product × quantity</p>
-          <p class="pricing-total-example">e.g. 8 hrs €2,400 + 300 × Bookmark = <strong>~€3,000</strong></p>
+          <p class="pricing-total-label" data-i18n="pricing.total_label">How to estimate your total</p>
+          <p class="pricing-total-formula" data-i18n="pricing.total_formula">Service fee + product × quantity</p>
+          <p class="pricing-total-example" data-i18n-html="pricing.total_example">e.g. 8 hrs €2,400 + 300 × Bookmark = <strong>~€3,000</strong></p>
         </div>
-        <p class="pricing-note-sm">* Product cost not included. Live printing pricing varies by setup — contact us for a quote. Travel outside NL quoted separately.</p>
+        <p class="pricing-note-sm" data-i18n="pricing.note_sm_index">* Product cost not included. Live printing pricing varies by setup — contact us for a quote. Travel outside NL quoted separately.</p>
         <div style="margin-top:1.5rem;">
-          <a class="btn-dark" href="book-now.html">Book Now &rarr;</a>
+          <a class="btn-dark" href="book-now.html" data-i18n="pricing.book_now">Book Now →</a>
         </div>
       </div>
-
-      <!-- RIGHT: hot foil packages -->
       <div class="pricing-right">
-        <p class="section-eyebrow" style="margin-bottom:0.5rem;">Hot Foil Stamping</p>
+        <p class="section-eyebrow" style="margin-bottom:0.5rem;" data-i18n="pricing.hot_foil_eyebrow">Hot Foil Stamping</p>
         <div class="pricing-price-top">
           <div class="price-big">€1,600</div>
-          <p class="price-note">Starting from &nbsp;&middot;&nbsp; 4 hours included</p>
+          <p class="price-note" data-i18n="pricing.starting_from">Starting from · 4 hours included</p>
         </div>
-        <p class="price-extra-inline">+ €200 per additional hour</p>
-
+        <p class="price-extra-inline" data-i18n="pricing.extra_hour">+ €200 per additional hour</p>
         <div class="pricing-packages">
           <div class="pkg-row">
             <div class="pkg-row-left">
-              <div class="pkg-row-hrs">4 hours</div>
-              <div class="pkg-row-items">~180–200 items</div>
+              <div class="pkg-row-hrs" data-i18n="pricing.4hr">4 hours</div>
+              <div class="pkg-row-items" data-i18n="pricing.4hr_items">~180–200 items</div>
             </div>
             <div class="pkg-row-price">€1,600</div>
           </div>
           <div class="pkg-row">
             <div class="pkg-row-left">
-              <div class="pkg-row-hrs">6 hours</div>
-              <div class="pkg-row-items">~260–300 items</div>
+              <div class="pkg-row-hrs" data-i18n="pricing.6hr">6 hours</div>
+              <div class="pkg-row-items" data-i18n="pricing.6hr_items">~260–300 items</div>
             </div>
             <div class="pkg-row-price">€2,000</div>
           </div>
           <div class="pkg-row featured">
             <div class="pkg-row-left">
-              <div class="pkg-row-hrs">8 hours &nbsp;&middot;&nbsp; Most popular</div>
-              <div class="pkg-row-items">~350–400 items</div>
+              <div class="pkg-row-hrs" data-i18n="pricing.8hr">8 hours · Most popular</div>
+              <div class="pkg-row-items" data-i18n="pricing.8hr_items">~350–400 items</div>
             </div>
             <div class="pkg-row-price">€2,400</div>
           </div>
           <div class="pkg-row">
             <div class="pkg-row-left">
-              <div class="pkg-row-hrs">10 hours</div>
-              <div class="pkg-row-items">~450–500 items</div>
+              <div class="pkg-row-hrs" data-i18n="pricing.10hr">10 hours</div>
+              <div class="pkg-row-items" data-i18n="pricing.10hr_items">~450–500 items</div>
             </div>
             <div class="pkg-row-price">€2,800</div>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -230,11 +228,11 @@
   <section class="about-strip" id="about">
     <div class="about-strip-inner">
       <div>
-        <p class="section-eyebrow">About Monospace Events</p>
-        <h2 class="section-title" style="margin-bottom:1rem;">Two crafts. One outcome.</h2>
-        <p class="about-strip-body">Monospace Events runs live event activations for trade shows, conferences, and corporate events. We bring two services to your stand: live digital printing and hot foil stamping — both personalised in real time, both designed to be kept.</p>
-        <p class="about-strip-body">Whether it's a tote bag printed in full colour with their name, or a leather journal stamped in gold — it doesn't get binned. It goes home, sits on the desk, and travels to every meeting they attend. That's the impression we deliver.</p>
-        <a class="value-cta" href="services.html">Our services &rarr;</a>
+        <p class="section-eyebrow" data-i18n="about.eyebrow">About Monospace Events</p>
+        <h2 class="section-title" style="margin-bottom:1rem;" data-i18n="about.title">Two crafts. One outcome.</h2>
+        <p class="about-strip-body" data-i18n="about.body1">Monospace Events runs live event activations for trade shows, conferences, and corporate events. We bring two services to your stand: live digital printing and hot foil stamping — both personalised in real time, both designed to be kept.</p>
+        <p class="about-strip-body" data-i18n="about.body2">Whether it's a tote bag printed in full colour with their name, or a leather journal stamped in gold — it doesn't get binned. It goes home, sits on the desk, and travels to every meeting they attend. That's the impression we deliver.</p>
+        <a class="value-cta" href="services.html" data-i18n="about.cta">Our services →</a>
       </div>
       <div class="about-visual">
         <img src="assets/products/lifestyle2.png" alt="Personalised items — Monospace Events" loading="lazy" />
@@ -246,8 +244,8 @@
   <!-- GALLERY MARQUEE -->
   <section class="gallery-section">
     <div class="gallery-header">
-      <p class="section-eyebrow">The Work</p>
-      <h2 class="section-title">From the event floor</h2>
+      <p class="section-eyebrow" data-i18n="section.gallery_eyebrow">The Work</p>
+      <h2 class="section-title" data-i18n="section.gallery_title">From the event floor</h2>
     </div>
     <div class="gallery-track-wrap">
       <div class="gallery-track">
@@ -259,7 +257,6 @@
         <div class="gallery-item" style="width:340px;height:310px;"></div>
         <div class="gallery-item" style="width:280px;height:400px;"></div>
         <div class="gallery-item" style="width:380px;height:270px;"></div>
-        <!-- Duplicate for seamless loop -->
         <div class="gallery-item" style="width:280px;height:380px;"></div>
         <div class="gallery-item" style="width:360px;height:290px;"></div>
         <div class="gallery-item" style="width:260px;height:420px;"></div>
@@ -278,33 +275,33 @@
     <div class="footer-top">
       <div>
         <p style="font-family:'Instrument Serif',serif; font-size:1rem; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:1rem;">Monospace Events</p>
-        <p class="footer-brand-text">Live printing and hot foil stamping for trade shows, conferences, and corporate events across Europe. We draw the crowd, personalise the moment, and send every attendee home with a keepsake they'll use for years.</p>
-        <p class="footer-email-label">Stay in the loop</p>
+        <p class="footer-brand-text" data-i18n="footer.brand_text">Live printing and hot foil stamping for trade shows, conferences, and corporate events across Europe. We draw the crowd, personalise the moment, and send every attendee home with a keepsake they'll use for years.</p>
+        <p class="footer-email-label" data-i18n="footer.stay_loop">Stay in the loop</p>
         <form class="footer-form" onsubmit="return false;">
-          <input type="email" placeholder="your@email.com" aria-label="Email" />
-          <button type="submit">Sign Up</button>
+          <input type="email" data-i18n-placeholder="footer.email_placeholder" placeholder="your@email.com" aria-label="Email" />
+          <button type="submit" data-i18n="footer.sign_up">Sign Up</button>
         </form>
       </div>
       <div>
-        <p class="footer-col-title">Services</p>
+        <p class="footer-col-title" data-i18n="footer.services">Services</p>
         <ul class="footer-col-links">
-          <li><a href="live-printing.html">Live Printing</a></li>
-          <li><a href="hot-foil-stamping.html">Hot Foil Stamping</a></li>
-          <li><a href="hot-foil-stamping.html#faq">FAQ</a></li>
-          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a></li>
+          <li><a href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a></li>
+          <li><a href="hot-foil-stamping.html#faq" data-i18n="footer.faq">FAQ</a></li>
+          <li><a href="#pricing" data-i18n="footer.pricing">Pricing</a></li>
         </ul>
       </div>
       <div>
-        <p class="footer-col-title">Company</p>
+        <p class="footer-col-title" data-i18n="footer.company">Company</p>
         <ul class="footer-col-links">
-          <li><a href="#about">About Us</a></li>
-          <li><a href="catalog.html">Product Catalog</a></li>
-          <li><a href="mailto:hello@vormevents.com">Contact</a></li>
-          <li><a href="mailto:hello@vormevents.com">Book an Event</a></li>
+          <li><a href="#about" data-i18n="footer.about_us">About Us</a></li>
+          <li><a href="catalog.html" data-i18n="footer.product_catalog">Product Catalog</a></li>
+          <li><a href="mailto:hello@vormevents.com" data-i18n="footer.contact">Contact</a></li>
+          <li><a href="mailto:hello@vormevents.com" data-i18n="footer.book_event">Book an Event</a></li>
         </ul>
       </div>
       <div>
-        <p class="footer-col-title">Follow</p>
+        <p class="footer-col-title" data-i18n="footer.follow">Follow</p>
         <ul class="footer-col-links">
           <li><a href="#">Instagram</a></li>
           <li><a href="#">LinkedIn</a></li>
@@ -317,10 +314,10 @@
       <div class="footer-wordmark">MONOSPACE EVENTS</div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2026 Monospace Events. All rights reserved.</p>
+      <p class="footer-copy" data-i18n="footer.rights">&copy; 2026 Monospace Events. All rights reserved.</p>
       <ul class="footer-legal">
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+        <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
       </ul>
     </div>
   </footer>

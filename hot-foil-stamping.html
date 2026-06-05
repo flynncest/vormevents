@@ -6,26 +6,30 @@
   <title>Live Hot Foil Stamping for Trade Shows & Corporate Events | Monospace Events</title>
   <meta name="description" content="Live hot foil stamping at your trade show or corporate event. We draw the crowd, personalise the item, and capture the lead — while you have the conversation. 40–50 items per hour. From €1,600." />
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/i18n.js"></script>
 </head>
-<body>
+<body data-page="hot-foil-stamping">
 
-  <!-- NAV -->
   <nav class="nav" id="nav">
     <ul class="nav-left">
-      <li><button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button></li>
-      <li><a class="nav-link" href="live-printing.html">Live Printing</a></li>
-      <li><a class="nav-link" href="hot-foil-stamping.html" style="opacity:0.45;">Hot Foil Stamping</a></li>
-      <li><a class="nav-link" href="catalog.html">Catalog</a></li>
+      <li><button class="nav-hamburger" id="nav-hamburger" data-i18n-aria="nav.open_menu" aria-label="Open menu"><span></span><span></span><span></span></button></li>
+      <li><a class="nav-link" href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a></li>
+      <li><a class="nav-link" href="hot-foil-stamping.html" style="opacity:0.45;" data-i18n="nav.hot_foil">Hot Foil Stamping</a></li>
+      <li><a class="nav-link" href="catalog.html" data-i18n="nav.catalog">Catalog</a></li>
     </ul>
     <a class="nav-logo" href="index.html">Monospace Events</a>
     <ul class="nav-right">
-      <li><a class="nav-link" href="index.html#about">About</a></li>
-      <li><a class="nav-link" href="#faq">FAQ</a></li>
-      <li><a class="nav-link nav-cta" href="book-now.html">Book Now &rarr;</a></li>
+      <li><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a></li>
+      <li><a class="nav-link" href="#faq" data-i18n="nav.faq">FAQ</a></li>
+      <li class="lang-switcher">
+        <button class="lang-btn lang-active" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="nl">NL</button>
+      </li>
+      <li><a class="nav-link nav-cta" href="book-now.html" data-i18n="nav.book_now">Book Now →</a></li>
     </ul>
   </nav>
 
-  <!-- MOBILE MENU -->
   <div class="mob-menu" id="mob-menu">
     <div class="mob-menu-head">
       <button class="mob-close" id="mob-close">&times;</button>
@@ -33,138 +37,122 @@
       <div class="mob-spacer"></div>
     </div>
     <nav class="mob-nav">
-      <a href="live-printing.html">Live Printing</a>
-      <a href="hot-foil-stamping.html">Hot Foil Stamping</a>
-      <a href="catalog.html">Catalog</a>
-      <a href="index.html#about">About</a>
-      <a href="#faq">FAQ</a>
-      <a href="#pricing">Pricing</a>
-      <a href="book-now.html" class="mob-book">Book Now &rarr;</a>
+      <a href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a>
+      <a href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a>
+      <a href="catalog.html" data-i18n="nav.catalog">Catalog</a>
+      <a href="index.html#about" data-i18n="nav.about">About</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#pricing" data-i18n="mob.pricing">Pricing</a>
+      <a href="book-now.html" class="mob-book" data-i18n="mob.book_now">Book Now →</a>
     </nav>
+    <div class="mob-lang">
+      <button class="lang-btn lang-active" data-lang="en">EN</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="nl">NL</button>
+    </div>
   </div>
 
 
-  <!-- PAGE HERO -->
   <header class="page-hero">
-    <p class="page-hero-eyebrow">Service 02</p>
-    <h1 class="page-hero-title">Live Hot Foil<br>Stamping</h1>
-    <p class="page-hero-subtitle">
-      A heated die presses your logo and the attendee's name into a luxury leather, cork, or canvas item — in seconds, in front of them.
-      The result: a stand people queue for, a natural lead-capture moment while they wait, and a branded keepsake that lives on every desk for years.
-      We handle setup, personalisation, and breakdown. You handle the conversations.
-    </p>
+    <p class="page-hero-eyebrow" data-i18n="hfs.eyebrow">Service 02</p>
+    <h1 class="page-hero-title" data-i18n-html="hfs.title">Live Hot Foil<br>Stamping</h1>
+    <p class="page-hero-subtitle" data-i18n="hfs.subtitle">A heated die presses your logo and the attendee's name into a luxury leather, cork, or canvas item — in seconds, in front of them. The result: a stand people queue for, a natural lead-capture moment while they wait, and a branded keepsake that lives on every desk for years. We handle setup, personalisation, and breakdown. You handle the conversations.</p>
   </header>
-
-  <!-- HERO IMAGE PLACEHOLDER -->
   <div class="services-hero-image"></div>
 
 
-  <!-- WHAT YOU GET -->
   <section class="achieve-section">
-    <p class="section-eyebrow" style="padding: 0;">What You Get</p>
-    <h2 class="section-title" style="margin-top:0.5rem; margin-bottom:0;">Four outcomes. One activation.</h2>
-
+    <p class="section-eyebrow" style="padding:0;" data-i18n="hfs.wyg_eyebrow">What You Get</p>
+    <h2 class="section-title" style="margin-top:0.5rem; margin-bottom:0;" data-i18n="hfs.wyg_title">Four outcomes. One activation.</h2>
     <div class="achieve-grid">
-
       <div class="achieve-card" id="foot-traffic">
         <div class="achieve-num">01</div>
-        <h3 class="achieve-title">Drive Foot Traffic to Your Stand</h3>
-        <p class="achieve-text">Live hot foil stamping is the most visually compelling thing on any show floor. The moment the die comes down and the gold reveals, people stop mid-stride. One person watching becomes ten. Your stand becomes the one everyone asks about — before lunch.</p>
+        <h3 class="achieve-title" data-i18n="hfs.o1_title">Drive Foot Traffic to Your Stand</h3>
+        <p class="achieve-text" data-i18n="hfs.o1_text">Live hot foil stamping is the most visually compelling thing on any show floor. The moment the die comes down and the gold reveals, people stop mid-stride. One person watching becomes ten. Your stand becomes the one everyone asks about — before lunch.</p>
       </div>
-
       <div class="achieve-card" id="brand-awareness">
         <div class="achieve-num">02</div>
-        <h3 class="achieve-title">Turn Your Brand Into a Daily Impression</h3>
-        <p class="achieve-text">Your logo in gold on a leather journal. A canvas tote they take to the airport. A card holder that goes to every meeting. Unlike a lanyard or a brochure, a personalised item doesn't get binned — it stays in use, in view, and in front of the people who matter.</p>
+        <h3 class="achieve-title" data-i18n="hfs.o2_title">Turn Your Brand Into a Daily Impression</h3>
+        <p class="achieve-text" data-i18n="hfs.o2_text">Your logo in gold on a leather journal. A canvas tote they take to the airport. A card holder that goes to every meeting. Unlike a lanyard or a brochure, a personalised item doesn't get binned — it stays in use, in view, and in front of the people who matter.</p>
       </div>
-
       <div class="achieve-card" id="lead-capture">
         <div class="achieve-num">03</div>
-        <h3 class="achieve-title">Their Name. Stamped Live. Kept Forever.</h3>
-        <p class="achieve-text">The 2–3 minute wait is your window. Badge scan, short conversation, contact added. Just warm leads captured while they're smiling — no chasing required after the event.</p>
+        <h3 class="achieve-title" data-i18n="hfs.o3_title">Their Name. Stamped Live. Kept Forever.</h3>
+        <p class="achieve-text" data-i18n="hfs.o3_text">The 2–3 minute wait is your window. Badge scan, short conversation, contact added. Just warm leads captured while they're smiling — no chasing required after the event.</p>
       </div>
-
       <div class="achieve-card" id="goodwill">
         <div class="achieve-num">04</div>
-        <h3 class="achieve-title">Earn Genuine Attendee Goodwill</h3>
-        <p class="achieve-text">There's a difference between receiving a freebie and receiving a gift. An item made live, in front of them, with their name stamped in gold — that's a gift. It creates the kind of genuine goodwill a follow-up email can't manufacture.</p>
+        <h3 class="achieve-title" data-i18n="hfs.o4_title">Earn Genuine Attendee Goodwill</h3>
+        <p class="achieve-text" data-i18n="hfs.o4_text">There's a difference between receiving a freebie and receiving a gift. An item made live, in front of them, with their name stamped in gold — that's a gift. It creates the kind of genuine goodwill a follow-up email can't manufacture.</p>
       </div>
-
     </div>
   </section>
 
 
-  <!-- MATERIALS -->
   <section class="materials-section" id="materials">
-    <div style="padding: 0;">
-      <p class="section-eyebrow">Our Materials</p>
-      <h2 class="section-title" style="margin-bottom:0;">What we stamp on</h2>
+    <div style="padding:0;">
+      <p class="section-eyebrow" data-i18n="hfs.mat_eyebrow">Our Materials</p>
+      <h2 class="section-title" style="margin-bottom:0;" data-i18n="hfs.mat_title">What we stamp on</h2>
     </div>
-
     <div class="materials-grid">
-
       <div class="material-card" id="vegan-leather">
         <div class="material-card-img"></div>
         <div class="material-card-body">
-          <h2 class="material-card-title">Vegan Leather (PU)</h2>
-          <p class="material-card-text">Premium PU leather — the look and feel of genuine leather, without compromise. Holds a hot foil impression with clean edges and lasting depth.</p>
+          <h2 class="material-card-title" data-i18n="hfs.mat1_title">Vegan Leather (PU)</h2>
+          <p class="material-card-text" data-i18n="hfs.mat1_text">Premium PU leather — the look and feel of genuine leather, without compromise. Holds a hot foil impression with clean edges and lasting depth.</p>
           <ul class="material-card-features">
-            <li>Journals, card cases, passport holders, luggage tags</li>
-            <li>Gold foil, colour foil, or blind press</li>
+            <li data-i18n="hfs.mat1_f1">Journals, card cases, passport holders, luggage tags</li>
+            <li data-i18n="hfs.mat1_f2">Gold foil, colour foil, or blind press</li>
           </ul>
         </div>
       </div>
-
       <div class="material-card" id="cork">
         <div class="material-card-img"></div>
         <div class="material-card-body">
-          <h2 class="material-card-title">Cork</h2>
-          <p class="material-card-text">Sustainable, tactile, and visually distinct. The foil cuts a clean impression into the cork grain — warm, considered, and luxurious.</p>
+          <h2 class="material-card-title" data-i18n="hfs.mat2_title">Cork</h2>
+          <p class="material-card-text" data-i18n="hfs.mat2_text">Sustainable, tactile, and visually distinct. The foil cuts a clean impression into the cork grain — warm, considered, and luxurious.</p>
           <ul class="material-card-features">
-            <li>Journals, tote bags, coasters, luggage tags</li>
-            <li>Gold or blind emboss — colour foil available</li>
+            <li data-i18n="hfs.mat2_f1">Journals, tote bags, coasters, luggage tags</li>
+            <li data-i18n="hfs.mat2_f2">Gold or blind emboss — colour foil available</li>
           </ul>
         </div>
       </div>
-
       <div class="material-card">
         <div class="material-card-img"></div>
         <div class="material-card-body">
-          <h2 class="material-card-title">Canvas</h2>
-          <p class="material-card-text">Heavyweight canvas elevated from merchandise to memento. Your logo stamped in gold on something they carry every day.</p>
+          <h2 class="material-card-title" data-i18n="hfs.mat3_title">Canvas</h2>
+          <p class="material-card-text" data-i18n="hfs.mat3_text">Heavyweight canvas elevated from merchandise to memento. Your logo stamped in gold on something they carry every day.</p>
           <ul class="material-card-features">
-            <li>Tote bags, backpacks, pouches, pencil cases</li>
-            <li>Gold foil, colour foil, or pressed lettering</li>
+            <li data-i18n="hfs.mat3_f1">Tote bags, backpacks, pouches, pencil cases</li>
+            <li data-i18n="hfs.mat3_f2">Gold foil, colour foil, or pressed lettering</li>
           </ul>
         </div>
       </div>
-
     </div>
   </section>
 
 
-  <!-- PERSONALISATION -->
   <section class="personalisation-section">
     <div class="personalisation-inner">
       <div class="personalisation-visual"></div>
       <div>
-        <p class="section-eyebrow">The Personalisation</p>
-        <h2 class="section-title" style="margin-bottom:1.25rem;">More than a logo — a name</h2>
-        <p style="font-size:0.88rem; color:var(--muted); line-height:1.85; margin-bottom:1.25rem;">Beyond your brand mark, every item can be personalised with the attendee's own name or initials — stamped live, in front of them using individual metal type characters arranged and pressed by hand.</p>
-        <p style="font-size:0.88rem; color:var(--muted); line-height:1.85; margin-bottom:2rem;">The result is something they can't get anywhere else: your brand logo and their name, side by side, on a luxury material they chose.</p>
-        <h3 style="font-family:'Instrument Serif',serif; font-size:1.05rem; margin-bottom:1rem; color:var(--text);">Finishing options</h3>
+        <p class="section-eyebrow" data-i18n="hfs.pers_eyebrow">The Personalisation</p>
+        <h2 class="section-title" style="margin-bottom:1.25rem;" data-i18n="hfs.pers_title">More than a logo — a name</h2>
+        <p style="font-size:0.88rem; color:var(--muted); line-height:1.85; margin-bottom:1.25rem;" data-i18n="hfs.pers_body1">Beyond your brand mark, every item can be personalised with the attendee's own name or initials — stamped live, in front of them using individual metal type characters arranged and pressed by hand.</p>
+        <p style="font-size:0.88rem; color:var(--muted); line-height:1.85; margin-bottom:2rem;" data-i18n="hfs.pers_body2">The result is something they can't get anywhere else: your brand logo and their name, side by side, on a luxury material they chose.</p>
+        <h3 style="font-family:'Instrument Serif',serif; font-size:1.05rem; margin-bottom:1rem; color:var(--text);" data-i18n="hfs.pers_finishing">Finishing options</h3>
         <div class="finishing-options">
           <div class="finishing-opt">
-            <div class="finishing-opt-name">Gold Foil</div>
-            <div class="finishing-opt-sub">Warm, luxury, classic</div>
+            <div class="finishing-opt-name" data-i18n="hfs.f1_name">Gold Foil</div>
+            <div class="finishing-opt-sub" data-i18n="hfs.f1_sub">Warm, luxury, classic</div>
           </div>
           <div class="finishing-opt">
-            <div class="finishing-opt-name">Colour Foil</div>
-            <div class="finishing-opt-sub">Brand-matched colour</div>
+            <div class="finishing-opt-name" data-i18n="hfs.f2_name">Colour Foil</div>
+            <div class="finishing-opt-sub" data-i18n="hfs.f2_sub">Brand-matched colour</div>
           </div>
           <div class="finishing-opt">
-            <div class="finishing-opt-name">Blind Press</div>
-            <div class="finishing-opt-sub">Tactile, understated</div>
+            <div class="finishing-opt-name" data-i18n="hfs.f3_name">Blind Press</div>
+            <div class="finishing-opt-sub" data-i18n="hfs.f3_sub">Tactile, understated</div>
           </div>
         </div>
       </div>
@@ -172,39 +160,38 @@
   </section>
 
 
-  <!-- CAPACITY & PLANNING -->
   <section class="capacity-section">
     <div class="capacity-inner">
       <div>
-        <div class="capacity-num">40–50</div>
-        <p class="capacity-label">items stamped per hour</p>
-        <p class="capacity-desc">Our hot foil station operates at a comfortable pace of 40–50 personalised items per hour per machine. This includes logo foiling, letter-stamping the name, and quality checking — without rushing the craft.</p>
-        <p class="capacity-desc" style="margin-top:1rem;">For events where demand is especially high, we can deploy a second operator and machine. Ask about dual-station setups in your quote.</p>
+        <div class="capacity-num" data-i18n="hfs.cap_num">40–50</div>
+        <p class="capacity-label" data-i18n="hfs.cap_label">items stamped per hour</p>
+        <p class="capacity-desc" data-i18n="hfs.cap_desc1">Our hot foil station operates at a comfortable pace of 40–50 personalised items per hour per machine. This includes logo foiling, letter-stamping the name, and quality checking — without rushing the craft.</p>
+        <p class="capacity-desc" style="margin-top:1rem;" data-i18n="hfs.cap_desc2">For events where demand is especially high, we can deploy a second operator and machine. Ask about dual-station setups in your quote.</p>
       </div>
       <div>
-        <p class="section-eyebrow">Plan Your Quantities</p>
-        <h3 class="capacity-title">How many products should you have ready?</h3>
-        <p style="font-size:0.82rem; color:var(--muted); line-height:1.75; margin-bottom:1.25rem;">Based on our throughput, here are planning benchmarks. We recommend a 10% buffer above expected footfall.</p>
+        <p class="section-eyebrow" data-i18n="hfs.cap_plan_eyebrow">Plan Your Quantities</p>
+        <h3 class="capacity-title" data-i18n="hfs.cap_plan_title">How many products should you have ready?</h3>
+        <p style="font-size:0.82rem; color:var(--muted); line-height:1.75; margin-bottom:1.25rem;" data-i18n="hfs.cap_plan_desc">Based on our throughput, here are planning benchmarks. We recommend a 10% buffer above expected footfall.</p>
         <div class="capacity-examples">
           <div class="capacity-example">
-            <span class="capacity-example-label">4-hour event (half day)</span>
-            <span class="capacity-example-val">180–220 products</span>
+            <span class="capacity-example-label" data-i18n="cap.4hr_label">4-hour event (half day)</span>
+            <span class="capacity-example-val" data-i18n="cap.4hr_foil">180–220 products</span>
           </div>
           <div class="capacity-example">
-            <span class="capacity-example-label">6-hour event</span>
-            <span class="capacity-example-val">260–320 products</span>
+            <span class="capacity-example-label" data-i18n="cap.6hr_label">6-hour event</span>
+            <span class="capacity-example-val" data-i18n="cap.6hr_foil">260–320 products</span>
           </div>
           <div class="capacity-example">
-            <span class="capacity-example-label">8-hour event (full day)</span>
-            <span class="capacity-example-val">350–420 products</span>
+            <span class="capacity-example-label" data-i18n="cap.8hr_label">8-hour event (full day)</span>
+            <span class="capacity-example-val" data-i18n="cap.8hr_foil">350–420 products</span>
           </div>
           <div class="capacity-example">
-            <span class="capacity-example-label">10-hour event</span>
-            <span class="capacity-example-val">450–520 products</span>
+            <span class="capacity-example-label" data-i18n="cap.10hr_label">10-hour event</span>
+            <span class="capacity-example-val" data-i18n="cap.10hr_foil">450–520 products</span>
           </div>
           <div class="capacity-example">
-            <span class="capacity-example-label">2-day event (8 hrs/day)</span>
-            <span class="capacity-example-val">700–850 products</span>
+            <span class="capacity-example-label" data-i18n="cap.2day_label">2-day event (8 hrs/day)</span>
+            <span class="capacity-example-val" data-i18n="cap.2day_foil">700–850 products</span>
           </div>
         </div>
       </div>
@@ -212,179 +199,118 @@
   </section>
 
 
-  <!-- PRICING -->
   <section class="pricing-section" id="pricing">
     <div class="pricing-layout">
-
       <div class="pricing-left">
-        <p class="section-eyebrow">Investment</p>
-        <h2 class="pricing-title">Simple pricing, no surprises</h2>
+        <p class="section-eyebrow" data-i18n="pricing.eyebrow">Investment</p>
+        <h2 class="pricing-title" data-i18n="hfs.pricing_title">Simple pricing, no surprises</h2>
         <div class="pricing-includes">
-          <span class="pricing-inc-item">Logistics within the Netherlands</span>
-          <span class="pricing-inc-item">Embossing machine rental</span>
-          <span class="pricing-inc-item">Professional artisan team</span>
-          <span class="pricing-inc-item">Setup &amp; full breakdown</span>
-          <span class="pricing-inc-item">All foiling materials &amp; custom die</span>
+          <span class="pricing-inc-item" data-i18n="pricing.inc1">Logistics within the Netherlands</span>
+          <span class="pricing-inc-item" data-i18n="hfs.pricing_inc2">Embossing machine rental</span>
+          <span class="pricing-inc-item" data-i18n="pricing.inc3">Professional artisan team</span>
+          <span class="pricing-inc-item" data-i18n="pricing.inc4">Setup & full breakdown</span>
+          <span class="pricing-inc-item" data-i18n="hfs.pricing_inc5">All foiling materials & custom die</span>
         </div>
         <div class="pricing-total-note">
-          <p class="pricing-total-label">How to estimate your total</p>
-          <p class="pricing-total-formula">Service fee + product × quantity</p>
-          <p class="pricing-total-example">e.g. 8 hrs €2,400 + 300 × Bookmark = <strong>~€3,000</strong></p>
+          <p class="pricing-total-label" data-i18n="pricing.total_label">How to estimate your total</p>
+          <p class="pricing-total-formula" data-i18n="pricing.total_formula">Service fee + product × quantity</p>
+          <p class="pricing-total-example" data-i18n-html="pricing.total_example">e.g. 8 hrs €2,400 + 300 × Bookmark = <strong>~€3,000</strong></p>
         </div>
-        <p class="pricing-note-sm">* Product cost not included. Travel outside NL quoted separately.</p>
+        <p class="pricing-note-sm" data-i18n="hfs.pricing_note">* Product cost not included. Travel outside NL quoted separately.</p>
         <div style="margin-top:1.5rem;">
-          <a class="btn-dark" href="book-now.html">Book Now &rarr;</a>
+          <a class="btn-dark" href="book-now.html" data-i18n="pricing.book_now">Book Now →</a>
         </div>
       </div>
-
       <div class="pricing-right">
         <div class="pricing-price-top">
           <div class="price-big">€1,600</div>
-          <p class="price-note">Starting from &nbsp;&middot;&nbsp; 4 hours included</p>
+          <p class="price-note" data-i18n="pricing.starting_from">Starting from · 4 hours included</p>
         </div>
-        <p class="price-extra-inline">+ €200 per additional hour</p>
-
+        <p class="price-extra-inline" data-i18n="pricing.extra_hour">+ €200 per additional hour</p>
         <div class="pricing-packages">
           <div class="pkg-row">
             <div class="pkg-row-left">
-              <div class="pkg-row-hrs">4 hours</div>
-              <div class="pkg-row-items">~180–200 items</div>
+              <div class="pkg-row-hrs" data-i18n="pricing.4hr">4 hours</div>
+              <div class="pkg-row-items" data-i18n="pricing.4hr_items">~180–200 items</div>
             </div>
             <div class="pkg-row-price">€1,600</div>
           </div>
           <div class="pkg-row">
             <div class="pkg-row-left">
-              <div class="pkg-row-hrs">6 hours</div>
-              <div class="pkg-row-items">~260–300 items</div>
+              <div class="pkg-row-hrs" data-i18n="pricing.6hr">6 hours</div>
+              <div class="pkg-row-items" data-i18n="pricing.6hr_items">~260–300 items</div>
             </div>
             <div class="pkg-row-price">€2,000</div>
           </div>
           <div class="pkg-row featured">
             <div class="pkg-row-left">
-              <div class="pkg-row-hrs">8 hours &nbsp;&middot;&nbsp; Most popular</div>
-              <div class="pkg-row-items">~350–400 items</div>
+              <div class="pkg-row-hrs" data-i18n="pricing.8hr">8 hours · Most popular</div>
+              <div class="pkg-row-items" data-i18n="pricing.8hr_items">~350–400 items</div>
             </div>
             <div class="pkg-row-price">€2,400</div>
           </div>
           <div class="pkg-row">
             <div class="pkg-row-left">
-              <div class="pkg-row-hrs">10 hours</div>
-              <div class="pkg-row-items">~450–500 items</div>
+              <div class="pkg-row-hrs" data-i18n="pricing.10hr">10 hours</div>
+              <div class="pkg-row-items" data-i18n="pricing.10hr_items">~450–500 items</div>
             </div>
             <div class="pkg-row-price">€2,800</div>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
 
-  <!-- FAQ -->
   <section class="faq-section" id="faq">
     <div class="faq-inner">
-      <p class="section-eyebrow" style="text-align:center;">Common Questions</p>
-      <h2 class="section-title" style="text-align:center; margin-bottom:0;">Everything you need to know</h2>
-
+      <p class="section-eyebrow" style="text-align:center;" data-i18n="faq.eyebrow">Common Questions</p>
+      <h2 class="section-title" style="text-align:center; margin-bottom:0;" data-i18n="faq.title">Everything you need to know</h2>
       <div class="faq-grid">
 
         <div class="faq-item">
-          <button class="faq-question">What is live hot foil stamping and how does it work? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Hot foil stamping uses the traditional technique of heat embossing — a manual press stamps a design (your logo, a name, initials) onto items at your event using a heated metal die. The die presses through a thin foil film onto the surface, leaving a permanent, tactile impression in gold, colour, or blind press. It's done live on-site, giving attendees an interactive experience they can watch and take home.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="hfs.faq1_q">What is live hot foil stamping and how does it work? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="hfs.faq1_a">Hot foil stamping uses the traditional technique of heat embossing — a manual press stamps a design onto items at your event using a heated metal die.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">Who will personalise our merchandise on site? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Our trained stamping artisans operate professional-grade hot foil embossing machines with speed and precision. They handle everything on the day — setup, personalisation, queue management, and breakdown — so your team can focus entirely on conversations and lead capture.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="hfs.faq2_q">Who will personalise our merchandise on site? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="hfs.faq2_a">Our trained stamping artisans operate professional-grade hot foil embossing machines with speed and precision.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">How fast can you personalise one item? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>One artisan can personalise one item approximately every 1–1.5 minutes — equating to 40–50 items per hour. This includes logo foiling, individual letter stamping (name or initials), item handling, and quality checking. Additional artisans and machines can be added to increase capacity proportionally for larger events.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="hfs.faq3_q">How fast can you personalise one item? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="hfs.faq3_a">One artisan can personalise one item approximately every 1–1.5 minutes — equating to 40–50 items per hour.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">What types of products can be stamped? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>We specialise in quality vegan leather (PU) accessories including notebooks, luggage tags, card holders, keyrings, passport holders, mousepads, and laptop sleeves. We also work with natural cork (journals, totes) and heavyweight canvas (tote bags, pouches). Browse the Hot Foil Stamping section of our catalog for the full range.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="hfs.faq4_q">What types of products can be stamped? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="hfs.faq4_a">We specialise in quality vegan leather (PU) accessories including notebooks, luggage tags, card holders, keyrings, passport holders, mousepads, and laptop sleeves.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">We just want our company logo embossed — not individual names. Is that possible? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Absolutely. We create a custom brass die from your logo artwork and can emboss it across all products without any individual personalisation. This works well for pre-stamped giveaway items. We can also combine your logo with individual names — the choice is yours per item.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="hfs.faq5_q">We just want our company logo embossed — not individual names. Is that possible? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="hfs.faq5_a">Absolutely. We create a custom brass die from your logo artwork and can emboss it across all products without any individual personalisation.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">What finishing options are available? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Three options: <strong>Gold foil</strong> — warm, classic, and eye-catching. <strong>Colour foil</strong> — matched to your exact brand Pantone or hex code. <strong>Blind press</strong> — a purely tactile, debossed impression with no foil. Understated and increasingly popular at design and tech events. All three finishes are available on both your logo die and individual letter stamping.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="hfs.faq6_q">What finishing options are available? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n-html="hfs.faq6_a">Three options: <strong>Gold foil</strong> — warm, classic, and eye-catching. <strong>Colour foil</strong> — matched to your exact brand Pantone or hex code. <strong>Blind press</strong> — a purely tactile impression with no foil.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">We want personalisation done before the event, not live. Do you offer this? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Yes — we offer an in-studio pre-production service for orders that don't require a live element. Products are personalised in advance and delivered to your venue ready to hand out. This option has a shorter turnaround and a lower cost than live services. Contact us for details and lead times.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="hfs.faq7_q">We want personalisation done before the event, not live. Do you offer this? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="hfs.faq7_a">Yes — we offer an in-studio pre-production service for orders that don't require a live element.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">We already have our own products. Can you stamp them? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Yes. We can stamp on client-supplied merchandise at no extra cost, provided the items are flat and made of a heat-embossing-suitable material — vegan leather (PU), genuine leather, cork, or canvas. Send us a sample before the event and we'll confirm suitability.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="hfs.faq8_q">We already have our own products. Can you stamp them? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="hfs.faq8_a">Yes. We can stamp on client-supplied merchandise at no extra cost, provided the items are flat and made of a heat-embossing-suitable material.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">Do you supply the products, or do we need to source them? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Both work. We supply a full range of premium vegan leather, cork, and canvas accessories — browse the catalog. If you order through us, please allow 4–5 weeks lead time for bulk orders. Alternatively, source your own and we'll stamp them on the day.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="hfs.faq9_q">Do you supply the products, or do we need to source them? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="hfs.faq9_a">Both work. We supply a full range of premium vegan leather, cork, and canvas accessories — browse the catalog.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">What does the service include and how much space do you need? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>The service fee includes: logistics within the Netherlands, embossing machine, all foiling materials and custom die, professional artisan operators, setup before the event, and full breakdown after. We need approximately 1.5m × 1m of floor space and one standard 240v power outlet. Events outside the Netherlands may incur a travel supplement.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="hfs.faq10_q">What does the service include and how much space do you need? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="hfs.faq10_a">The service fee includes: logistics within the Netherlands, embossing machine, all foiling materials and custom die, professional artisan operators, setup before the event, and full breakdown after.</p></div></div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-question">Can Monospace Events work at private or internal corporate events? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Absolutely. While we're best known for trade shows and conferences, we regularly work at internal company events, product launches, client hospitality days, and award ceremonies. Any event where you want to give guests a premium personalised keepsake is a fit.</p>
-            </div>
-          </div>
+          <button class="faq-question" data-i18n="hfs.faq11_q">Can Monospace Events work at private or internal corporate events? <span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner"><p data-i18n="hfs.faq11_a">Absolutely. While we're best known for trade shows and conferences, we regularly work at internal company events, product launches, client hospitality days, and award ceremonies.</p></div></div>
         </div>
 
       </div>
@@ -392,11 +318,10 @@
   </section>
 
 
-  <!-- GALLERY -->
   <section class="gallery-section">
     <div class="gallery-header">
-      <p class="section-eyebrow">The Work</p>
-      <h2 class="section-title">From the event floor</h2>
+      <p class="section-eyebrow" data-i18n="section.gallery_eyebrow">The Work</p>
+      <h2 class="section-title" data-i18n="section.gallery_title">From the event floor</h2>
     </div>
     <div class="gallery-track-wrap">
       <div class="gallery-track">
@@ -421,37 +346,36 @@
   </section>
 
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-top">
       <div>
         <p style="font-family:'Instrument Serif',serif; font-size:1rem; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:1rem;">Monospace Events</p>
-        <p class="footer-brand-text">Live printing and hot foil stamping for trade shows, conferences, and corporate events across Europe. We draw the crowd, personalise the moment, and send every attendee home with a keepsake they'll use for years.</p>
-        <p class="footer-email-label">Stay in the loop</p>
+        <p class="footer-brand-text" data-i18n="footer.brand_text">Live printing and hot foil stamping for trade shows, conferences, and corporate events across Europe.</p>
+        <p class="footer-email-label" data-i18n="footer.stay_loop">Stay in the loop</p>
         <form class="footer-form" onsubmit="return false;">
-          <input type="email" placeholder="your@email.com" aria-label="Email" />
-          <button type="submit">Sign Up</button>
+          <input type="email" data-i18n-placeholder="footer.email_placeholder" placeholder="your@email.com" aria-label="Email" />
+          <button type="submit" data-i18n="footer.sign_up">Sign Up</button>
         </form>
       </div>
       <div>
-        <p class="footer-col-title">Services</p>
+        <p class="footer-col-title" data-i18n="footer.services">Services</p>
         <ul class="footer-col-links">
-          <li><a href="live-printing.html">Live Printing</a></li>
-          <li><a href="hot-foil-stamping.html">Hot Foil Stamping</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a></li>
+          <li><a href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a></li>
+          <li><a href="#faq" data-i18n="footer.faq">FAQ</a></li>
+          <li><a href="#pricing" data-i18n="footer.pricing">Pricing</a></li>
         </ul>
       </div>
       <div>
-        <p class="footer-col-title">Company</p>
+        <p class="footer-col-title" data-i18n="footer.company">Company</p>
         <ul class="footer-col-links">
-          <li><a href="index.html#about">About Us</a></li>
-          <li><a href="catalog.html">Product Catalog</a></li>
-          <li><a href="book-now.html">Book an Event</a></li>
+          <li><a href="index.html#about" data-i18n="footer.about_us">About Us</a></li>
+          <li><a href="catalog.html" data-i18n="footer.product_catalog">Product Catalog</a></li>
+          <li><a href="book-now.html" data-i18n="footer.book_event">Book an Event</a></li>
         </ul>
       </div>
       <div>
-        <p class="footer-col-title">Follow</p>
+        <p class="footer-col-title" data-i18n="footer.follow">Follow</p>
         <ul class="footer-col-links">
           <li><a href="#">Instagram</a></li>
           <li><a href="#">LinkedIn</a></li>
@@ -460,14 +384,12 @@
         </ul>
       </div>
     </div>
-    <div class="footer-wordmark-wrap">
-      <div class="footer-wordmark">MONOSPACE EVENTS</div>
-    </div>
+    <div class="footer-wordmark-wrap"><div class="footer-wordmark">MONOSPACE EVENTS</div></div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2026 Monospace Events. All rights reserved.</p>
+      <p class="footer-copy" data-i18n="footer.rights">&copy; 2026 Monospace Events. All rights reserved.</p>
       <ul class="footer-legal">
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+        <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
       </ul>
     </div>
   </footer>

@@ -6,22 +6,28 @@
   <title>Product Catalog — Live Printing & Hot Foil Stamping | Monospace Events</title>
   <meta name="description" content="Browse our range of canvas and fabric items for live printing, and vegan leather accessories for hot foil stamping — all personalised with your logo and the attendee's name at your event." />
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/i18n.js"></script>
 </head>
-<body>
+<body data-page="catalog">
 
   <!-- NAV -->
   <nav class="nav" id="nav">
     <ul class="nav-left">
-      <li><button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button></li>
-      <li><a class="nav-link" href="live-printing.html">Live Printing</a></li>
-      <li><a class="nav-link" href="hot-foil-stamping.html">Hot Foil Stamping</a></li>
-      <li><a class="nav-link" href="catalog.html" style="opacity:0.45;">Catalog</a></li>
+      <li><button class="nav-hamburger" id="nav-hamburger" data-i18n-aria="nav.open_menu" aria-label="Open menu"><span></span><span></span><span></span></button></li>
+      <li><a class="nav-link" href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a></li>
+      <li><a class="nav-link" href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a></li>
+      <li><a class="nav-link" href="catalog.html" style="opacity:0.45;" data-i18n="nav.catalog">Catalog</a></li>
     </ul>
     <a class="nav-logo" href="index.html">Monospace Events</a>
     <ul class="nav-right">
-      <li><a class="nav-link" href="index.html#about">About</a></li>
-      <li><a class="nav-link" href="hot-foil-stamping.html#faq">FAQ</a></li>
-      <li><a class="nav-link nav-cta" href="book-now.html">Book Now &rarr;</a></li>
+      <li><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a></li>
+      <li><a class="nav-link" href="hot-foil-stamping.html#faq" data-i18n="nav.faq">FAQ</a></li>
+      <li class="lang-switcher">
+        <button class="lang-btn lang-active" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="nl">NL</button>
+      </li>
+      <li><a class="nav-link nav-cta" href="book-now.html" data-i18n="nav.book_now">Book Now →</a></li>
     </ul>
   </nav>
 
@@ -33,30 +39,35 @@
       <div class="mob-spacer"></div>
     </div>
     <nav class="mob-nav">
-      <a href="live-printing.html">Live Printing</a>
-      <a href="hot-foil-stamping.html">Hot Foil Stamping</a>
-      <a href="catalog.html">Catalog</a>
-      <a href="index.html#about">About</a>
-      <a href="hot-foil-stamping.html#faq">FAQ</a>
-      <a href="hot-foil-stamping.html#pricing">Pricing</a>
-      <a href="book-now.html" class="mob-book">Book Now &rarr;</a>
+      <a href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a>
+      <a href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a>
+      <a href="catalog.html" data-i18n="nav.catalog">Catalog</a>
+      <a href="index.html#about" data-i18n="nav.about">About</a>
+      <a href="hot-foil-stamping.html#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="hot-foil-stamping.html#pricing" data-i18n="mob.pricing">Pricing</a>
+      <a href="book-now.html" class="mob-book" data-i18n="mob.book_now">Book Now →</a>
     </nav>
+    <div class="mob-lang">
+      <button class="lang-btn lang-active" data-lang="en">EN</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="nl">NL</button>
+    </div>
   </div>
 
 
   <!-- CATALOG HEADER -->
   <div class="catalog-header">
     <div class="catalog-header-inner">
-      <p class="page-hero-eyebrow" style="margin-bottom:0.75rem;">Product Catalog</p>
-      <h1 class="page-hero-title">Products for Your Event</h1>
-      <p style="font-size:0.86rem; color:var(--muted); line-height:1.75; margin-bottom:0;">
+      <p class="page-hero-eyebrow" style="margin-bottom:0.75rem;" data-i18n="catalog.eyebrow">Product Catalog</p>
+      <h1 class="page-hero-title" data-i18n="catalog.title">Products for Your Event</h1>
+      <p style="font-size:0.86rem; color:var(--muted); line-height:1.75; margin-bottom:0;" data-i18n-html="catalog.subtitle_html">
         Browse by service below — canvas items for live printing, and vegan leather accessories for hot foil stamping.
         All items can be personalised with your logo and the attendee's name. Product pricing is separate from the service fee —
         see <a href="hot-foil-stamping.html#pricing" style="color:var(--gold);">service pricing</a>.
       </p>
       <div class="catalog-filters">
-        <a class="filter-btn active" href="#live-printing">Live Printing</a>
-        <a class="filter-btn" href="#hot-foil-stamping">Hot Foil Stamping</a>
+        <a class="filter-btn active" href="#live-printing" data-i18n="catalog.filter_print">Live Printing</a>
+        <a class="filter-btn" href="#hot-foil-stamping" data-i18n="catalog.filter_foil">Hot Foil Stamping</a>
       </div>
     </div>
   </div>
@@ -73,16 +84,16 @@
        ========================================== -->
   <div class="catalog-service-section" id="live-printing">
     <div class="catalog-service-head">
-      <p class="catalog-section-label" style="padding:0; margin-bottom:0.5rem;">Service 01</p>
-      <h2 class="catalog-service-title">Live Printing</h2>
-      <p class="catalog-service-body">Full-colour digital printing on canvas items — done live at your stand. Tote bags, pouches, and more — personalised in minutes and carried far beyond the event floor.</p>
+      <p class="catalog-section-label" style="padding:0; margin-bottom:0.5rem;" data-i18n="catalog.sec1_num">Service 01</p>
+      <h2 class="catalog-service-title" data-i18n="catalog.sec1_title">Live Printing</h2>
+      <p class="catalog-service-body" data-i18n="catalog.sec1_body">Full-colour digital printing on canvas items — done live at your stand. Tote bags, pouches, and more — personalised in minutes and carried far beyond the event floor.</p>
     </div>
 
-    <p class="catalog-section-label" style="margin-top:2rem;">Canvas</p>
+    <p class="catalog-section-label" style="margin-top:2rem;" data-i18n="catalog.canvas_label">Canvas</p>
     <div class="catalog-grid">
 
-      <!-- Tote Bag Wide — largest -->
-      <div class="product-card" data-category="print">
+      <!-- Tote Bag Wide -->
+      <div class="product-card" data-category="print" data-product='{"name":"Tote Bag Wide","img":"assets/products/tote-bag-wide.png","service":"Live Printing","sub":"40 × 30 × 10 cm","desc":"A generous wide-body canvas tote that makes the biggest impression at your stand. Roomy enough for folders, merchandise, and everything in between — and carried long after the event ends.","suitable":"Corporate events, trade shows, product launches, conference gifting","finishLabel":"Print type","finish":"Full-colour digital print","time":"3 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/tote-bag-wide.png" alt="Canvas Tote Bag Wide 40×30cm" loading="lazy" />
         </div>
@@ -100,7 +111,7 @@
       </div>
 
       <!-- Tote Bag -->
-      <div class="product-card" data-category="print">
+      <div class="product-card" data-category="print" data-product='{"name":"Tote Bag","img":"assets/products/tote-bag.png","service":"Live Printing","sub":"35 × 40 cm","desc":"The classic everyday canvas tote in a versatile 35×40cm format. Lightweight, foldable, and a guaranteed crowd-pleaser at any stand. Attendees will use it daily long after the event.","suitable":"Conferences, exhibitions, brand activations, retail pop-ups","finishLabel":"Print type","finish":"Full-colour digital print","time":"3 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/tote-bag.png" alt="Canvas Tote Bag 35×40cm" loading="lazy" />
         </div>
@@ -118,7 +129,7 @@
       </div>
 
       <!-- Small Sling Bag -->
-      <div class="product-card" data-category="print">
+      <div class="product-card" data-category="print" data-product='{"name":"Small Sling Bag","img":"assets/products/sling-bag.png","service":"Live Printing","sub":"Crossbody strap","desc":"A compact crossbody sling bag that keeps hands free at your event. Perfect for attendees who are constantly on the move through the event floor — stylish and practical.","suitable":"Networking events, outdoor festivals, casual corporate activations, lifestyle brands","finishLabel":"Print type","finish":"Full-colour digital print","time":"2 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/sling-bag.png" alt="Canvas Small Sling Bag crossbody" loading="lazy" />
         </div>
@@ -136,7 +147,7 @@
       </div>
 
       <!-- Travel Pouch -->
-      <div class="product-card" data-category="print">
+      <div class="product-card" data-category="print" data-product='{"name":"Travel Pouch","img":"assets/products/travel-pouch-canvas.png","service":"Live Printing","sub":"Top handle","desc":"A practical canvas pouch with a top handle, perfect for toiletries, cables, or day-trip essentials. A thoughtful gift that travels with the attendee long after your event.","suitable":"Hospitality events, travel brands, wellness activations, beauty industry","finishLabel":"Print type","finish":"Full-colour digital print","time":"2 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/travel-pouch-canvas.png" alt="Canvas Travel Pouch with handle" loading="lazy" />
         </div>
@@ -153,8 +164,8 @@
         </div>
       </div>
 
-      <!-- Drawstring Pouch — smallest -->
-      <div class="product-card" data-category="print">
+      <!-- Drawstring Pouch -->
+      <div class="product-card" data-category="print" data-product='{"name":"Drawstring Pouch","img":"assets/products/drawstring-pouch.png","service":"Live Printing","sub":"Ribbon colour customisable","desc":"A lightweight natural canvas drawstring pouch with a customisable ribbon colour. Great as a small gift bag, accessories pouch, or event takeaway with a handmade feel.","suitable":"Wellness events, beauty brands, retail pop-ups, boutique activations","finishLabel":"Print type","finish":"Full-colour digital print","time":"2 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/drawstring-pouch.png" alt="Canvas Drawstring Pouch with ribbon" loading="lazy" />
         </div>
@@ -184,16 +195,16 @@
        ========================================== -->
   <div class="catalog-service-section" id="hot-foil-stamping">
     <div class="catalog-service-head">
-      <p class="catalog-section-label" style="padding:0; margin-bottom:0.5rem;">Service 02</p>
-      <h2 class="catalog-service-title">Hot Foil Stamping</h2>
-      <p class="catalog-service-body">Luxury vegan leather accessories stamped with your logo and the attendee's name in gold, colour, or blind press — live at your stand. Items that live on every desk for years.</p>
+      <p class="catalog-section-label" style="padding:0; margin-bottom:0.5rem;" data-i18n="catalog.sec2_num">Service 02</p>
+      <h2 class="catalog-service-title" data-i18n="catalog.sec2_title">Hot Foil Stamping</h2>
+      <p class="catalog-service-body" data-i18n="catalog.sec2_body">Luxury vegan leather accessories stamped with your logo and the attendee's name in gold, colour, or blind press — live at your stand. Items that live on every desk for years.</p>
     </div>
 
-    <p class="catalog-section-label" style="margin-top:2rem;">Vegan Leather (PU)</p>
+    <p class="catalog-section-label" style="margin-top:2rem;" data-i18n="catalog.pu_label">Vegan Leather (PU)</p>
     <div class="catalog-grid">
 
-      <!-- Laptop Sleeve — largest -->
-      <div class="product-card" data-category="pu">
+      <!-- Laptop Sleeve -->
+      <div class="product-card" data-category="pu" data-product='{"name":"Laptop Sleeve","img":"assets/products/laptop-sleeve.png","service":"Hot Foil Stamping","sub":"13&quot; / 16&quot;","desc":"Premium vegan leather sleeve available in 13\" and 16\" sizes. Protects the laptop and puts your brand on every desk, in every meeting room, every single day.","suitable":"Tech conferences, executive gifting, corporate events, financial services","finishLabel":"Foil colour","finish":"foil","time":"3 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/laptop-sleeve.png" alt="PU Laptop Sleeve" loading="lazy" />
           <span class="product-badge">New</span>
@@ -219,7 +230,7 @@
       </div>
 
       <!-- A4 Document Organizer -->
-      <div class="product-card" data-category="pu">
+      <div class="product-card" data-category="pu" data-product='{"name":"A4 Document Organizer","img":"assets/products/a4-organizer.png","service":"Hot Foil Stamping","sub":"Envelope flap","desc":"A sleek A4 document organizer with an envelope flap closure. Keeps papers, contracts, and business documents organized and looking premium — stamped with logo and name.","suitable":"Legal, finance, and consulting events, executive gifting, corporate summits","finishLabel":"Foil colour","finish":"foil","time":"3 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/a4-organizer.png" alt="PU A4 Document Organizer" loading="lazy" />
         </div>
@@ -244,7 +255,7 @@
       </div>
 
       <!-- Desk Mousepad -->
-      <div class="product-card" data-category="pu">
+      <div class="product-card" data-category="pu" data-product='{"name":"Desk Mousepad","img":"assets/products/mousepad.png","service":"Hot Foil Stamping","sub":"Large format","desc":"A full-size PU leather desk mousepad that turns a daily essential into a branded keepsake. Stays on desks for years — keeping your logo and the attendee\'s initials in view every day.","suitable":"Tech events, corporate gifting, office-focused activations, financial services","finishLabel":"Foil colour","finish":"foil","time":"3 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/mousepad.png" alt="PU Desk Mousepad" loading="lazy" />
           <span class="product-badge">Popular</span>
@@ -270,7 +281,7 @@
       </div>
 
       <!-- Journal A5 -->
-      <div class="product-card" data-category="pu">
+      <div class="product-card" data-category="pu" data-product='{"name":"Journal A5","img":"assets/products/journal-a5.png","service":"Hot Foil Stamping","sub":"Hardcover","desc":"A hardcover A5 journal in premium vegan leather, personalised with the attendee\'s initials and your logo in foil. A gift they will reach for and use every single day of the year.","suitable":"Conferences, leadership summits, education brands, luxury corporate gifting","finishLabel":"Foil colour","finish":"foil","time":"3 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/journal-a5.png" alt="PU Journal A5" loading="lazy" />
           <span class="product-badge">Best Seller</span>
@@ -296,7 +307,7 @@
       </div>
 
       <!-- Electronics Pouch -->
-      <div class="product-card" data-category="pu">
+      <div class="product-card" data-category="pu" data-product='{"name":"Electronics Pouch","img":"assets/products/electronics-pouch.png","service":"Hot Foil Stamping","sub":"Roll-up organizer","desc":"A roll-up PU leather organizer for cables, chargers, and earphones. Opens flat for easy access and rolls into a compact form that fits in any bag — stamped with name and logo.","suitable":"Tech events, travel brands, executive gifting, media and production companies","finishLabel":"Foil colour","finish":"foil","time":"3 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/electronics-pouch.png" alt="PU Electronics Pouch" loading="lazy" />
         </div>
@@ -320,8 +331,8 @@
         </div>
       </div>
 
-      <!-- Pencil Case (box) — NEW -->
-      <div class="product-card" data-category="pu">
+      <!-- Pencil Case (box) -->
+      <div class="product-card" data-category="pu" data-product='{"name":"Pencil Case","img":"assets/products/pencil-case.png","service":"Hot Foil Stamping","sub":"Box shape · Zip closure","desc":"A structured box-shaped pencil case in PU leather with a zip closure and gold zipper pull. Doubles as a desk organizer for pens, cards, and small accessories. Personalised with foil initials.","suitable":"Education brands, stationery events, back-to-school activations, creative industry","finishLabel":"Foil colour","finish":"foil","time":"2 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/pencil-case.png" alt="PU Pencil Case box shape" loading="lazy" />
           <span class="product-badge">New</span>
@@ -346,8 +357,8 @@
         </div>
       </div>
 
-      <!-- Flat Pencil Case — NEW -->
-      <div class="product-card" data-category="pu">
+      <!-- Flat Pencil Case -->
+      <div class="product-card" data-category="pu" data-product='{"name":"Flat Pencil Case","img":"assets/products/flat-pencil-case.png","service":"Hot Foil Stamping","sub":"Zip closure","desc":"A sleek flat pencil case in soft PU leather with a zip closure. Slim enough to slip into any bag, with a wide opening for easy access. Personalised with foil stamped initials.","suitable":"Corporate events, creative industry, education, architecture and design firms","finishLabel":"Foil colour","finish":"foil","time":"2 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/flat-pencil-case.png" alt="PU Flat Pencil Case" loading="lazy" />
           <span class="product-badge">New</span>
@@ -373,7 +384,7 @@
       </div>
 
       <!-- Small Item Pouch -->
-      <div class="product-card" data-category="pu">
+      <div class="product-card" data-category="pu" data-product='{"name":"Small Item Pouch","img":"assets/products/small-pouch.png","service":"Hot Foil Stamping","sub":"Snap close","desc":"A compact envelope-style pouch with a snap closure for cards, coins, lip balm, and daily essentials. Small enough for any pocket, luxurious enough to be memorable — personalised in foil.","suitable":"Finance events, boutique retail, luxury brand activations, exclusive gifting","finishLabel":"Foil colour","finish":"foil","time":"2 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/small-pouch.png" alt="PU Small Item Pouch" loading="lazy" />
         </div>
@@ -398,7 +409,7 @@
       </div>
 
       <!-- Magnetic Organizer Pouch -->
-      <div class="product-card" data-category="pu">
+      <div class="product-card" data-category="pu" data-product='{"name":"Magnetic Organizer Pouch","img":"assets/products/magnetic-pouch.png","service":"Hot Foil Stamping","sub":"Magnetic close","desc":"A structured magnetic-close pouch for organising daily essentials. Holds cards, cables, lip balm, and more. A premium daily carry item personalised with your logo and attendee name.","suitable":"Corporate events, wellness brands, beauty activations, executive gifting","finishLabel":"Foil colour","finish":"foil","time":"2 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/magnetic-pouch.png" alt="PU Magnetic Small Item Organizer Pouch" loading="lazy" />
         </div>
@@ -423,7 +434,7 @@
       </div>
 
       <!-- Luggage Tag -->
-      <div class="product-card" data-category="pu">
+      <div class="product-card" data-category="pu" data-product='{"name":"Luggage Tag","img":"assets/products/luggage-tag.png","service":"Hot Foil Stamping","sub":"Belt strap","desc":"A classic PU leather luggage tag with a belt strap attachment. Every trip becomes a reminder of your brand — stamped with the attendee\'s name and your company logo.","suitable":"Travel industry events, aviation, hospitality, corporate travel gifting","finishLabel":"Foil colour","finish":"foil","time":"2 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/luggage-tag.png" alt="PU Luggage Tag" loading="lazy" />
         </div>
@@ -448,7 +459,7 @@
       </div>
 
       <!-- Key Holder -->
-      <div class="product-card" data-category="pu">
+      <div class="product-card" data-category="pu" data-product='{"name":"Key Holder","img":"assets/products/key-holder.png","service":"Hot Foil Stamping","sub":"Snap closure","desc":"A slim PU leather key holder with a snap closure that keeps keys organised and untangled. A small but memorable daily-use gift stamped with initials and your brand.","suitable":"Real estate events, automotive, hospitality, corporate gifting","finishLabel":"Foil colour","finish":"foil","time":"2 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/key-holder.png" alt="PU Key Holder" loading="lazy" />
         </div>
@@ -472,35 +483,10 @@
         </div>
       </div>
 
-      <!-- Card Holder (wide) -->
-      <div class="product-card" data-category="pu">
+      <!-- Card Holder -->
+      <div class="product-card" data-category="pu" data-product='{"name":"Card Holder","img":"assets/products/card-holder.png","service":"Hot Foil Stamping","sub":"Slim fit","desc":"A slim vegan leather card holder that slips into any pocket. Holds business cards, loyalty cards, and key access cards — a carry-everywhere gift stamped with initials in foil.","suitable":"Networking events, finance and consulting, tech companies, corporate gifting","finishLabel":"Foil colour","finish":"foil","time":"2 minutes"}'>
         <div class="product-img-wrap">
-          <img src="assets/products/card-holder.png" alt="PU Card Holder Wide" loading="lazy" />
-        </div>
-        <div class="product-card-foot">
-          <div>
-            <h3 class="product-name">Card Holder</h3>
-            <p class="product-sub">6-card slots</p>
-            <div class="product-colors">
-              <span class="color-dot" title="Green" style="background:#3D6B4F;"></span>
-              <span class="color-dot" title="Blue" style="background:#2A5BA0;"></span>
-              <span class="color-dot" title="Red" style="background:#9B2020;"></span>
-              <span class="color-dot" title="Orange" style="background:#C96820;"></span>
-              <span class="color-dot" title="Navy" style="background:#1A2B6B;"></span>
-              <span class="color-dot" title="Black" style="background:#111;"></span>
-              <span class="color-dot" title="Brown" style="background:#6B3F2A;"></span>
-              <span class="color-dot" title="Khaki" style="background:#8B7B5A;"></span>
-              <span class="color-dot" title="Grey" style="background:#8A8A8A;"></span>
-            </div>
-          </div>
-          <div class="arrow-btn">&#8594;</div>
-        </div>
-      </div>
-
-      <!-- Card Holder (slim) -->
-      <div class="product-card" data-category="pu">
-        <div class="product-img-wrap">
-          <img src="assets/products/slim-card.png" alt="PU Card Holder Slim" loading="lazy" />
+          <img src="assets/products/card-holder.png" alt="PU Card Holder" loading="lazy" />
         </div>
         <div class="product-card-foot">
           <div>
@@ -523,7 +509,7 @@
       </div>
 
       <!-- Bookmark -->
-      <div class="product-card" data-category="pu">
+      <div class="product-card" data-category="pu" data-product='{"name":"Bookmark","img":"assets/products/bookmark.png","service":"Hot Foil Stamping","sub":"Leather strap","desc":"A refined PU leather bookmark with a leather strap detail. A sophisticated gift for readers and professionals — personalised with initials in foil and your company mark.","suitable":"Publishing events, education, luxury brand activations, library and arts industries","finishLabel":"Foil colour","finish":"foil","time":"2 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/bookmark.png" alt="PU Bookmark" loading="lazy" />
         </div>
@@ -548,7 +534,7 @@
       </div>
 
       <!-- Keyring Teardrop -->
-      <div class="product-card" data-category="pu">
+      <div class="product-card" data-category="pu" data-product='{"name":"Keyring — Teardrop","img":"assets/products/keyring-drop.png","service":"Hot Foil Stamping","sub":"Metal ring","desc":"A teardrop-shaped PU leather keyring with a metal ring attachment. An everyday carry item that keeps your brand in hand — literally — stamped with initials in foil.","suitable":"Automotive events, real estate, hospitality, brand activations","finishLabel":"Foil colour","finish":"foil","time":"2 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/keyring-drop.png" alt="PU Keyring Teardrop" loading="lazy" />
         </div>
@@ -573,7 +559,7 @@
       </div>
 
       <!-- Keyring Rectangle -->
-      <div class="product-card" data-category="pu">
+      <div class="product-card" data-category="pu" data-product='{"name":"Keyring — Rectangle","img":"assets/products/keyring-rect.png","service":"Hot Foil Stamping","sub":"Metal ring","desc":"A rectangular PU leather keyring with a metal ring — clean and minimal. The small surface area stamps beautifully with initials and a logo mark in foil.","suitable":"Automotive events, real estate, hospitality, corporate gifting","finishLabel":"Foil colour","finish":"foil","time":"2 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/keyring-rect.png" alt="PU Keyring Rectangle" loading="lazy" />
         </div>
@@ -597,8 +583,8 @@
         </div>
       </div>
 
-      <!-- Cable Management — smallest -->
-      <div class="product-card" data-category="pu">
+      <!-- Cable Management -->
+      <div class="product-card" data-category="pu" data-product='{"name":"Cable Management","img":"assets/products/cable-wrap.png","service":"Hot Foil Stamping","sub":"Snap closure","desc":"A slim PU leather cable wrap with a snap closure that keeps cables neat and tangle-free. A practical desk accessory stamped with initials — small, useful, and always visible.","suitable":"Tech events, office-focused activations, corporate gifting, media companies","finishLabel":"Foil colour","finish":"foil","time":"2 minutes"}'>
         <div class="product-img-wrap">
           <img src="assets/products/cable-wrap.png" alt="PU Cable Management Wrap" loading="lazy" />
         </div>
@@ -634,19 +620,19 @@
         <div class="promo-card-bg" style="background-image:url('assets/products/logo-colourful.png');"></div>
         <div class="promo-card-overlay"></div>
         <div class="promo-card-body">
-          <p class="promo-card-eyebrow">Both Services at One Event</p>
-          <h3 class="promo-card-title">Print it. Stamp it.<br>Do both.</h3>
-          <p class="promo-card-text">Run live printing and hot foil stamping side by side at your stand. Attendees choose their item and their finish — and your stand becomes the most talked-about in the room.</p>
-          <span class="promo-card-note">Contact us to plan a dual-service setup</span>
+          <p class="promo-card-eyebrow" data-i18n="catalog.promo1_eyebrow">Both Services at One Event</p>
+          <h3 class="promo-card-title" data-i18n-html="catalog.promo1_title">Print it. Stamp it.<br>Do both.</h3>
+          <p class="promo-card-text" data-i18n="catalog.promo1_text">Run live printing and hot foil stamping side by side at your stand. Attendees choose their item and their finish — and your stand becomes the most talked-about in the room.</p>
+          <span class="promo-card-note" data-i18n="catalog.promo1_note">Contact us to plan a dual-service setup</span>
         </div>
       </div>
 
       <div class="promo-card promo-card--dark">
         <div class="promo-card-body">
-          <p class="promo-card-eyebrow">Custom Sourcing</p>
-          <h3 class="promo-card-title">Don't see what you need?</h3>
-          <p class="promo-card-text">Have specific items in mind? We can source it for you — just ask. Pet company? We've sourced pet collars. Outdoor brand? Technical gear. Tell us your idea and we'll make it work.</p>
-          <a class="promo-card-cta" href="book-now.html">Ask us &rarr;</a>
+          <p class="promo-card-eyebrow" data-i18n="catalog.promo2_eyebrow">Custom Sourcing</p>
+          <h3 class="promo-card-title" data-i18n="catalog.promo2_title">Don't see what you need?</h3>
+          <p class="promo-card-text" data-i18n="catalog.promo2_text">Have specific items in mind? We can source it for you — just ask. Pet company? We've sourced pet collars. Outdoor brand? Technical gear. Tell us your idea and we'll make it work.</p>
+          <a class="promo-card-cta" href="book-now.html" data-i18n="catalog.promo2_cta">Ask us →</a>
         </div>
       </div>
 
@@ -659,32 +645,32 @@
     <div class="footer-top">
       <div>
         <p style="font-family:'Instrument Serif',serif; font-size:1rem; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:1rem;">Monospace Events</p>
-        <p class="footer-brand-text">Live printing and hot foil stamping for trade shows, conferences, and corporate events across Europe. We draw the crowd, personalise the moment, and send every attendee home with a keepsake they'll use for years.</p>
-        <p class="footer-email-label">Stay in the loop</p>
+        <p class="footer-brand-text" data-i18n="footer.brand_text">Live printing and hot foil stamping for trade shows, conferences, and corporate events across Europe. We draw the crowd, personalise the moment, and send every attendee home with a keepsake they'll use for years.</p>
+        <p class="footer-email-label" data-i18n="footer.stay_loop">Stay in the loop</p>
         <form class="footer-form" onsubmit="return false;">
-          <input type="email" placeholder="your@email.com" aria-label="Email" />
-          <button type="submit">Sign Up</button>
+          <input type="email" data-i18n-placeholder="footer.email_placeholder" placeholder="your@email.com" aria-label="Email" />
+          <button type="submit" data-i18n="footer.sign_up">Sign Up</button>
         </form>
       </div>
       <div>
-        <p class="footer-col-title">Services</p>
+        <p class="footer-col-title" data-i18n="footer.services">Services</p>
         <ul class="footer-col-links">
-          <li><a href="live-printing.html">Live Printing</a></li>
-          <li><a href="hot-foil-stamping.html">Hot Foil Stamping</a></li>
-          <li><a href="hot-foil-stamping.html#faq">FAQ</a></li>
-          <li><a href="hot-foil-stamping.html#pricing">Pricing</a></li>
+          <li><a href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a></li>
+          <li><a href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a></li>
+          <li><a href="hot-foil-stamping.html#faq" data-i18n="footer.faq">FAQ</a></li>
+          <li><a href="hot-foil-stamping.html#pricing" data-i18n="footer.pricing">Pricing</a></li>
         </ul>
       </div>
       <div>
-        <p class="footer-col-title">Company</p>
+        <p class="footer-col-title" data-i18n="footer.company">Company</p>
         <ul class="footer-col-links">
-          <li><a href="index.html#about">About Us</a></li>
-          <li><a href="catalog.html">Product Catalog</a></li>
-          <li><a href="book-now.html">Book an Event</a></li>
+          <li><a href="index.html#about" data-i18n="footer.about_us">About Us</a></li>
+          <li><a href="catalog.html" data-i18n="footer.product_catalog">Product Catalog</a></li>
+          <li><a href="book-now.html" data-i18n="footer.book_event">Book an Event</a></li>
         </ul>
       </div>
       <div>
-        <p class="footer-col-title">Follow</p>
+        <p class="footer-col-title" data-i18n="footer.follow">Follow</p>
         <ul class="footer-col-links">
           <li><a href="#">Instagram</a></li>
           <li><a href="#">LinkedIn</a></li>
@@ -697,13 +683,45 @@
       <div class="footer-wordmark">MONOSPACE EVENTS</div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2026 Monospace Events. All rights reserved.</p>
+      <p class="footer-copy" data-i18n="footer.rights">&copy; 2026 Monospace Events. All rights reserved.</p>
       <ul class="footer-legal">
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+        <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
       </ul>
     </div>
   </footer>
+
+
+  <!-- PRODUCT POPUP -->
+  <div class="popup-overlay" id="popup-overlay" role="dialog" aria-modal="true" aria-label="Product detail">
+    <div class="popup-modal">
+      <button class="popup-close" id="popup-close" aria-label="Close">&times;</button>
+      <div class="popup-img-side">
+        <img id="popup-img" src="" alt="" />
+      </div>
+      <div class="popup-detail-side">
+        <p class="popup-service-label" id="popup-service"></p>
+        <h2 class="popup-name" id="popup-name"></h2>
+        <p class="popup-desc" id="popup-desc"></p>
+        <div class="popup-meta">
+          <div class="popup-meta-row">
+            <span class="popup-meta-label" data-i18n="popup.best_for">Best for</span>
+            <span class="popup-meta-value" id="popup-suitable"></span>
+          </div>
+          <div class="popup-meta-row" id="popup-finish-row">
+            <span class="popup-meta-label" id="popup-finish-label"></span>
+            <div id="popup-finish-value"></div>
+          </div>
+          <div class="popup-meta-row">
+            <span class="popup-meta-label" id="popup-time-label" data-i18n="popup.stamping_time">Stamping time</span>
+            <span class="popup-time-value" id="popup-time"></span>
+          </div>
+        </div>
+        <a href="book-now.html#book-form" class="popup-cta" id="popup-cta-btn" data-i18n="popup.get_quote">Get a Quote Now →</a>
+      </div>
+    </div>
+  </div>
+
 
   <script src="js/main.js"></script>
 </body>

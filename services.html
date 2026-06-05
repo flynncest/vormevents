@@ -6,26 +6,30 @@
   <title>Event Services — Live Printing & Hot Foil Stamping | Monospace Events</title>
   <meta name="description" content="Two live event activation services for your stand — live printing on canvas and fabric, and hot foil stamping on vegan leather. Personalised in real time, designed to be kept." />
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/i18n.js"></script>
 </head>
-<body>
+<body data-page="services">
 
-  <!-- NAV -->
   <nav class="nav" id="nav">
     <ul class="nav-left">
-      <li><button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button></li>
-      <li><a class="nav-link" href="live-printing.html">Live Printing</a></li>
-      <li><a class="nav-link" href="hot-foil-stamping.html">Hot Foil Stamping</a></li>
-      <li><a class="nav-link" href="catalog.html">Catalog</a></li>
+      <li><button class="nav-hamburger" id="nav-hamburger" data-i18n-aria="nav.open_menu" aria-label="Open menu"><span></span><span></span><span></span></button></li>
+      <li><a class="nav-link" href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a></li>
+      <li><a class="nav-link" href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a></li>
+      <li><a class="nav-link" href="catalog.html" data-i18n="nav.catalog">Catalog</a></li>
     </ul>
     <a class="nav-logo" href="index.html">Monospace Events</a>
     <ul class="nav-right">
-      <li><a class="nav-link" href="index.html#about">About</a></li>
-      <li><a class="nav-link" href="hot-foil-stamping.html#faq">FAQ</a></li>
-      <li><a class="nav-link nav-cta" href="book-now.html">Book Now &rarr;</a></li>
+      <li><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a></li>
+      <li><a class="nav-link" href="hot-foil-stamping.html#faq" data-i18n="nav.faq">FAQ</a></li>
+      <li class="lang-switcher">
+        <button class="lang-btn lang-active" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="nl">NL</button>
+      </li>
+      <li><a class="nav-link nav-cta" href="book-now.html" data-i18n="nav.book_now">Book Now →</a></li>
     </ul>
   </nav>
 
-  <!-- MOBILE MENU -->
   <div class="mob-menu" id="mob-menu">
     <div class="mob-menu-head">
       <button class="mob-close" id="mob-close">&times;</button>
@@ -33,76 +37,75 @@
       <div class="mob-spacer"></div>
     </div>
     <nav class="mob-nav">
-      <a href="live-printing.html">Live Printing</a>
-      <a href="hot-foil-stamping.html">Hot Foil Stamping</a>
-      <a href="catalog.html">Catalog</a>
-      <a href="index.html#about">About</a>
-      <a href="hot-foil-stamping.html#faq">FAQ</a>
-      <a href="hot-foil-stamping.html#pricing">Pricing</a>
-      <a href="book-now.html" class="mob-book">Book Now &rarr;</a>
+      <a href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a>
+      <a href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a>
+      <a href="catalog.html" data-i18n="nav.catalog">Catalog</a>
+      <a href="index.html#about" data-i18n="nav.about">About</a>
+      <a href="hot-foil-stamping.html#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="hot-foil-stamping.html#pricing" data-i18n="mob.pricing">Pricing</a>
+      <a href="book-now.html" class="mob-book" data-i18n="mob.book_now">Book Now →</a>
     </nav>
+    <div class="mob-lang">
+      <button class="lang-btn lang-active" data-lang="en">EN</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="nl">NL</button>
+    </div>
   </div>
 
 
-  <!-- PAGE HERO -->
   <header class="page-hero">
-    <p class="page-hero-eyebrow">Event Services</p>
-    <h1 class="page-hero-title">Two Services.<br>One Stand.</h1>
-    <p class="page-hero-subtitle">
-      Live printing and hot foil stamping — choose one or run both at the same event.
-      Personalised in real time, in front of your attendees, designed to be kept long after the event ends.
-    </p>
+    <p class="page-hero-eyebrow" data-i18n="services.eyebrow">Event Services</p>
+    <h1 class="page-hero-title" data-i18n-html="services.title">Two Services.<br>One Stand.</h1>
+    <p class="page-hero-subtitle" data-i18n="services.subtitle">Live printing and hot foil stamping — choose one or run both at the same event. Personalised in real time, in front of your attendees, designed to be kept long after the event ends.</p>
   </header>
 
 
-  <!-- SERVICE HUB -->
   <section class="service-hub" style="padding-top:4rem; padding-bottom:5rem;">
     <a class="service-hub-card" href="live-printing.html">
-      <div class="service-hub-num">Service 01</div>
-      <h2 class="service-hub-title">Live Printing</h2>
-      <p class="service-hub-desc">Full-colour digital printing on canvas tote bags, pouches, and fabric items — done live at your stand while they watch. Bold, vivid, and impossible to throw away.</p>
-      <span class="service-hub-cta">See Live Printing &rarr;</span>
+      <div class="service-hub-num" data-i18n="services.hub1_num">Service 01</div>
+      <h2 class="service-hub-title" data-i18n="services.hub1_title">Live Printing</h2>
+      <p class="service-hub-desc" data-i18n="services.hub1_desc">Full-colour digital printing on canvas tote bags, pouches, and fabric items — done live at your stand while they watch. Bold, vivid, and impossible to throw away.</p>
+      <span class="service-hub-cta" data-i18n="services.hub1_cta">See Live Printing →</span>
     </a>
     <a class="service-hub-card" href="hot-foil-stamping.html">
-      <div class="service-hub-num">Service 02</div>
-      <h2 class="service-hub-title">Hot Foil Stamping</h2>
-      <p class="service-hub-desc">Your logo and their name pressed into luxury vegan leather in gold, colour, or blind press — while they watch. Journals, card holders, laptop sleeves — a craft people queue for.</p>
-      <span class="service-hub-cta">See Hot Foil Stamping &rarr;</span>
+      <div class="service-hub-num" data-i18n="services.hub2_num">Service 02</div>
+      <h2 class="service-hub-title" data-i18n="services.hub2_title">Hot Foil Stamping</h2>
+      <p class="service-hub-desc" data-i18n="services.hub2_desc">Your logo and their name pressed into luxury vegan leather in gold, colour, or blind press — while they watch. Journals, card holders, laptop sleeves — a craft people queue for.</p>
+      <span class="service-hub-cta" data-i18n="services.hub2_cta">See Hot Foil Stamping →</span>
     </a>
   </section>
 
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-top">
       <div>
         <p style="font-family:'Instrument Serif',serif; font-size:1rem; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:1rem;">Monospace Events</p>
-        <p class="footer-brand-text">Live printing and hot foil stamping for trade shows, conferences, and corporate events across Europe. We draw the crowd, personalise the moment, and send every attendee home with a keepsake they'll use for years.</p>
-        <p class="footer-email-label">Stay in the loop</p>
+        <p class="footer-brand-text" data-i18n="footer.brand_text">Live printing and hot foil stamping for trade shows, conferences, and corporate events across Europe. We draw the crowd, personalise the moment, and send every attendee home with a keepsake they'll use for years.</p>
+        <p class="footer-email-label" data-i18n="footer.stay_loop">Stay in the loop</p>
         <form class="footer-form" onsubmit="return false;">
-          <input type="email" placeholder="your@email.com" aria-label="Email" />
-          <button type="submit">Sign Up</button>
+          <input type="email" data-i18n-placeholder="footer.email_placeholder" placeholder="your@email.com" aria-label="Email" />
+          <button type="submit" data-i18n="footer.sign_up">Sign Up</button>
         </form>
       </div>
       <div>
-        <p class="footer-col-title">Services</p>
+        <p class="footer-col-title" data-i18n="footer.services">Services</p>
         <ul class="footer-col-links">
-          <li><a href="live-printing.html">Live Printing</a></li>
-          <li><a href="hot-foil-stamping.html">Hot Foil Stamping</a></li>
-          <li><a href="hot-foil-stamping.html#faq">FAQ</a></li>
-          <li><a href="hot-foil-stamping.html#pricing">Pricing</a></li>
+          <li><a href="live-printing.html" data-i18n="nav.live_printing">Live Printing</a></li>
+          <li><a href="hot-foil-stamping.html" data-i18n="nav.hot_foil">Hot Foil Stamping</a></li>
+          <li><a href="hot-foil-stamping.html#faq" data-i18n="footer.faq">FAQ</a></li>
+          <li><a href="hot-foil-stamping.html#pricing" data-i18n="footer.pricing">Pricing</a></li>
         </ul>
       </div>
       <div>
-        <p class="footer-col-title">Company</p>
+        <p class="footer-col-title" data-i18n="footer.company">Company</p>
         <ul class="footer-col-links">
-          <li><a href="index.html#about">About Us</a></li>
-          <li><a href="catalog.html">Product Catalog</a></li>
-          <li><a href="book-now.html">Book an Event</a></li>
+          <li><a href="index.html#about" data-i18n="footer.about_us">About Us</a></li>
+          <li><a href="catalog.html" data-i18n="footer.product_catalog">Product Catalog</a></li>
+          <li><a href="book-now.html" data-i18n="footer.book_event">Book an Event</a></li>
         </ul>
       </div>
       <div>
-        <p class="footer-col-title">Follow</p>
+        <p class="footer-col-title" data-i18n="footer.follow">Follow</p>
         <ul class="footer-col-links">
           <li><a href="#">Instagram</a></li>
           <li><a href="#">LinkedIn</a></li>
@@ -111,14 +114,12 @@
         </ul>
       </div>
     </div>
-    <div class="footer-wordmark-wrap">
-      <div class="footer-wordmark">MONOSPACE EVENTS</div>
-    </div>
+    <div class="footer-wordmark-wrap"><div class="footer-wordmark">MONOSPACE EVENTS</div></div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2026 Monospace Events. All rights reserved.</p>
+      <p class="footer-copy" data-i18n="footer.rights">&copy; 2026 Monospace Events. All rights reserved.</p>
       <ul class="footer-legal">
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+        <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
       </ul>
     </div>
   </footer>
